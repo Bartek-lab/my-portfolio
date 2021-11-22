@@ -1,0 +1,38 @@
+.cooparateInfoBox {
+  height: 20vh;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+.cooparateInfoBox p {
+  margin: 1rem 1.5rem 0 1.5rem;
+}
+
+@media (max-width: 370px) {
+  .cooparateInfoBox p {
+    margin: 1rem auto auto auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .cooparateInfoBox {
+    text-align: left;
+  }
+  .cooparateInfoBox p {
+    margin: 1rem 0 0 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-height: 1200px) {
+  .cooparateInfoBox {
+    height: 30vh;
+    width: 80%;
+  }
+  .mainBox {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=CooperateInfoBox.module.css.map */

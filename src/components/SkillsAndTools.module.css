@@ -1,0 +1,125 @@
+.skillsSection {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.skillsSection .skillsText {
+  margin: 0 2rem 0 2rem;
+}
+
+.skillsSection h2 {
+  font: 400 Poppins, sans-serif, Helvetica;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.skillsSection article {
+  margin: 1rem 1.5rem 0 1.5rem;
+  padding: 1rem;
+  font-family: Poppins, sans-serif, Helvetica;
+  font-weight: 300;
+}
+
+.skillsSection .spanLine {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto 1rem auto;
+  background-color: #fdb550;
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 370px) {
+  .skillsSection {
+    height: 100vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .skillsSection h2 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+  .skillsSection article {
+    font-size: 0.8rem;
+    margin: 1rem auto auto auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .skillsSection {
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skillsSection .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15rem;
+  }
+  .skillsSection .skillsText {
+    margin: 0;
+    width: 40%;
+    text-align: left;
+    height: 13rem;
+    max-height: 13rem;
+  }
+  .skillsSection article {
+    margin: 0 2rem 0 0;
+    padding: 0;
+  }
+  .skillsSection .spanLine {
+    margin: 1rem 0 1rem 0;
+  }
+  .infoTools {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1025px) and (max-height: 1200px) {
+  .skillsSection {
+    height: 70vh;
+  }
+  .skillsSection h2 {
+    padding-top: 1rem;
+  }
+  .skillsSection article {
+    margin: 0 3rem 0 0;
+  }
+  .mainBox {
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+/*# sourceMappingURL=SkillsAndTools.module.css.map */

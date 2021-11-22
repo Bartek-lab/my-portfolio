@@ -1,0 +1,205 @@
+.projectSection {
+  height: 85vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.projectSection h2 {
+  font-size: 2rem;
+}
+
+.projectSection p {
+  margin: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.spanLine {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto 1rem auto;
+  background-color: #fdb550;
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 10px;
+}
+
+.offerImgUnique {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 237px;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/Unique-travel.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/Unique-travel.png");
+  margin: 3rem auto 2rem auto;
+  border-radius: 20px;
+}
+
+.offerImgUnique a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.offerImgVeggie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 237px;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../images/veggie.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/veggie.png");
+  border-radius: 20px;
+  margin: 3rem auto 2rem auto;
+}
+
+.offerImgVeggie a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.sideProjects article {
+  display: none;
+}
+
+@media (max-width: 370px) {
+  .projectSection {
+    height: 90vh;
+  }
+  .projectSection h2 {
+    font-size: 1.7rem;
+    margin: 4rem auto auto auto;
+  }
+  .projectSection p {
+    font-size: 0.8rem;
+    margin: 2rem auto auto auto;
+  }
+  .offerImgUnique {
+    width: 200px;
+  }
+  .offerImgVeggie {
+    width: 200px;
+  }
+}
+
+@media (min-width: 600px) {
+  .infoBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+  .spanLine {
+    margin: 1rem 0 1rem 0;
+  }
+  .projectSection {
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projectSection p {
+    padding: 0;
+    margin: 0 2rem 2.5rem 0;
+  }
+  .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    max-height: 15rem;
+  }
+  .sideProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sideProjects article {
+    width: 140px;
+    display: block;
+    font-size: 0.8rem;
+    font-family: Poppins, sans-serif, Helvetica;
+    font-style: italic;
+  }
+  .sideProjects p {
+    margin: 1rem auto 1rem 0.4rem;
+  }
+  .offerImgUnique {
+    width: 140px;
+    height: 70px;
+    margin: 0;
+  }
+  .offerImgVeggie {
+    width: 140px;
+    height: 70px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-height: 1200px) {
+  .projectSection {
+    height: 60vh;
+    margin-bottom: 5rem;
+  }
+  .projectSection article {
+    margin: 0 3rem 0 0;
+  }
+  .mainBox {
+    width: 80%;
+    max-width: 1000px;
+  }
+  .offerImgUnique {
+    width: 190px;
+  }
+  .offerImgVeggie {
+    width: 190px;
+  }
+  .sideProjects article {
+    width: 190px;
+    margin: 1.4rem auto 1rem 0.4rem;
+  }
+}
+/*# sourceMappingURL=Projects.module.css.map */

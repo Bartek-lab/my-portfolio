@@ -1,0 +1,189 @@
+.landingPage {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: Poppins, sans-serif, Helvetica;
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.infoBox {
+  margin: 8rem 5rem 0rem 5rem;
+  text-align: center;
+}
+
+.title {
+  font: 400 2.7rem Poppins, sans-serif, Helvetica;
+  color: #fdb550;
+}
+
+.mainText {
+  font-size: 1.2rem;
+  margin: 3rem 0 2rem 0;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+
+.landingImage {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+}
+
+.landingImage .landingImageDesktop {
+  display: none;
+}
+
+.mainButton {
+  background-color: white;
+  color: #fdb550;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border: 2px solid #fdb550;
+  border-radius: 30px;
+  width: 12rem;
+  height: 3.5rem;
+}
+
+@media (max-width: 370px) {
+  .infoBox {
+    margin: 4rem 2rem 0 2rem;
+  }
+  .landingImage .landingImageMobile {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .landingPage {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainBox {
+    width: 90%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 0 4rem;
+    text-align: left;
+    max-height: 25vh;
+    width: 30%;
+  }
+  .mainText {
+    margin: 1rem 0 1rem 0;
+    height: 4rem;
+    width: 11rem;
+  }
+  .mainButton {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+  }
+  .landingImage {
+    position: relative;
+    width: 50%;
+  }
+  .landingImage .landingImageMobile {
+    height: 22vh;
+    max-height: 22vh;
+    width: 24vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mainBox {
+    width: 100%;
+    height: 60vh;
+    max-width: 1000px;
+    margin-bottom: 4rem;
+  }
+  .infoBox {
+    height: 100%;
+    margin: 0 5rem 0 0;
+    max-height: 50vh;
+  }
+  .infoBox .title {
+    width: 100%;
+    text-align: left;
+  }
+  .mainText {
+    width: 100%;
+    margin: 3rem 0 1rem 0;
+    font-size: 1.4rem;
+  }
+  .buttonBox {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .landingImage {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 38%;
+    height: 42vh;
+  }
+  .landingImage .landingImageMobile {
+    display: none;
+  }
+  .landingImage .landingImageDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+    max-height: auto;
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=LandingPage.module.css.map */

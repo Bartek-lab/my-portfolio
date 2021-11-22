@@ -1,0 +1,101 @@
+@import "../SCSS/variables";
+@import "../SCSS/mediaQueries";
+.skillsSection {
+  height: fit-content;
+  text-align: center;
+  min-height: fit-content;
+
+  .skillsText {
+    margin: 0 2rem 0 2rem;
+  }
+  h2 {
+    @include titleTwo;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  article {
+    margin: 1rem 1.5rem 0 1.5rem;
+    padding: 1rem;
+    font-family: $font-family;
+    font-weight: 300;
+  }
+  .spanLine {
+    position: relative;
+    display: flex;
+    margin: 1rem auto 1rem auto;
+    background-color: $primary-color;
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-smallPhone) {
+  .skillsSection {
+    height: 100vh;
+    min-height: fit-content;
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+    article {
+      font-size: 0.8rem;
+      margin: 1rem auto auto auto;
+    }
+  }
+}
+@media (min-width: $breakpoint-tablet) {
+  .skillsSection {
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+
+    .mainBox {
+      display: flex;
+      height: 15rem;
+    }
+
+    .skillsText {
+      margin: 0;
+      width: 40%;
+      text-align: left;
+      height: 13rem;
+      max-height: 13rem;
+    }
+    article {
+      margin: 0 2rem 0 0;
+      padding: 0;
+    }
+    .spanLine {
+      margin: 1rem 0 1rem 0;
+    }
+  }
+
+  .infoTools {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $breakpoint-smallDesktop) and (max-height: 1200px) {
+  .skillsSection {
+    height: 70vh;
+    h2 {
+      padding-top: 1rem;
+    }
+    article {
+      margin: 0 3rem 0 0;
+    }
+  }
+  .mainBox {
+    width: 80%;
+    max-width: 1000px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;CACZ;;AACD,AAAA,QAAQ,CAAC;EACP,UAAU,EAAE,MAAM;CACnB;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,QAAQ,CAAC;IACP,KAAK,EAAE,GAAG;IACV,SAAS,EAAE,GAAG;IACd,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,GAAG;IACnB,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM;IACnB,MAAM,EAAE,IAAI;GACb",
+    "sources": [
+        "Card.module.scss",
+        "../SCSS/_mediaQueries.scss"
+    ],
+    "names": [],
+    "file": "Card.module.css"
+}

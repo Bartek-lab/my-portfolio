@@ -1,0 +1,23 @@
+$primary-color: #fdb550;
+$secondary-color: #6769ba;
+$font-family: Poppins, sans-serif, Helvetica;
+
+@mixin spanLine($width) {
+  background-color: $primary-color;
+  width: $width;
+  height: 0.4rem;
+  border-radius: 10px;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 1rem 0 0 0;
+}
+
+@mixin titleOne() {
+  font: 400 2.7rem $font-family;
+}
+
+@mixin titleTwo() {
+  font: 400 $font-family;
+}

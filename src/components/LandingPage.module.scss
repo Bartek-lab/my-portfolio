@@ -1,0 +1,152 @@
+@import "../SCSS/variables";
+@import "../SCSS/mediaQueries";
+
+.landingPage {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: $font-family;
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+.infoBox {
+  margin: 8rem 5rem 0rem 5rem;
+  text-align: center;
+}
+.title {
+  @include titleOne;
+  color: $primary-color;
+}
+.mainText {
+  font-size: 1.2rem;
+  margin: 3rem 0 2rem 0;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+.landingImage {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  .landingImageDesktop {
+    display: none;
+  }
+}
+.mainButton {
+  background-color: white;
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border: 2px solid $primary-color;
+  border-radius: 30px;
+  width: 12rem;
+  height: 3.5rem;
+}
+
+@media (max-width: $breakpoint-smallPhone) {
+  .infoBox {
+    margin: 4rem 2rem 0 2rem;
+  }
+  .landingImage {
+    .landingImageMobile {
+      width: 80%;
+    }
+  }
+}
+@media (min-width: $breakpoint-tablet) {
+  .landingPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainBox {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 4rem;
+    text-align: left;
+    max-height: 25vh;
+
+    width: 30%;
+  }
+  .mainText {
+    margin: 1rem 0 1rem 0;
+    height: 4rem;
+    width: 11rem;
+  }
+
+  .mainButton {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+  }
+  .landingImage {
+    position: relative;
+    width: 50%;
+    .landingImageMobile {
+      height: 22vh;
+      max-height: 22vh;
+      width: 24vh;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-smallDesktop) {
+  .mainBox {
+    width: 100%;
+    height: 60vh;
+    max-width: 1000px;
+    margin-bottom: 4rem;
+  }
+
+  .infoBox {
+    height: 100%;
+    margin: 0 5rem 0 0;
+    max-height: 50vh;
+    .title {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .mainText {
+    width: 100%;
+    margin: 3rem 0 1rem 0;
+
+    font-size: 1.4rem;
+  }
+  .buttonBox {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .landingImage {
+    position: relative;
+    display: flex;
+    width: 38%;
+    height: 42vh;
+
+    .landingImageMobile {
+      display: none;
+    }
+    .landingImageDesktop {
+      display: flex;
+      height: 300px;
+      max-height: auto;
+      width: 320px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+@import "../SCSS/variables";
+@import "../SCSS/mediaQueries";
+.aboutMe_section {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.backgroundBox {
+  height: 40%;
+  width: 100%;
+  background-color: #6769ba;
+
+  h2 {
+    @include titleOne;
+    padding-top: 5rem;
+    font-family: $font-family;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .spanLine {
+    position: relative;
+    display: flex;
+    margin: 1rem auto 1rem auto;
+    background-color: $primary-color;
+    width: 4rem;
+    height: 0.4rem;
+    border-radius: 10px;
+  }
+}
+
+.aboutMe_image {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+
+.aboutMe_info {
+  position: absolute;
+  margin-top: 10rem;
+  width: 100%;
+  padding: 0 3.5rem 0 3.5rem;
+  line-height: 1.5rem;
+  font-family: $font-family;
+  font-weight: 300;
+  text-align: center;
+}
+.aboutMe_text {
+  position: relative;
+}
+
+.iconsBox {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+    margin: 2.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-smallPhone) {
+  .aboutMe_image {
+    width: 12rem;
+  }
+  .aboutMe_info {
+    margin-top: 7rem;
+    font-size: 0.8rem;
+  }
+  .backgroundBox {
+    h2 {
+      font-size: 2rem;
+      padding-top: 3rem;
+    }
+  }
+}
+@media (min-width: $breakpoint-tablet) {
+  .aboutMe_section {
+    height: 60vh;
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+  .backgroundBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .emptyBox {
+    width: 50%;
+    height: 100%;
+  }
+  .imageBox {
+    width: 50%;
+    height: 40vh;
+  }
+  .aboutMe_image {
+    height: 15rem;
+    width: 35vw;
+    left: 29%;
+    top: 25%;
+  }
+  .titleBox {
+    height: auto;
+    margin: 16vh 0 0 2rem;
+    h2 {
+      padding: 0;
+    }
+    .spanLine {
+      margin: 0.8rem 0 0 0;
+    }
+  }
+  .aboutMe_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 3rem 0 0;
+    text-align: left;
+    width: 40%;
+    margin: 1rem 0 0 2rem;
+  }
+}
+
+@media (min-width: $breakpoint-smallDesktop) and (max-height: 1200px) {
+  .aboutMe_section {
+    height: 90vh;
+    h2 {
+      font-size: 2.4rem;
+      padding-top: 6rem;
+    }
+  }
+  .mainBox {
+    margin: auto;
+    width: 70%;
+    min-width: 70%;
+    max-width: 1000px;
+  }
+  .aboutMe_image {
+    height: 19rem;
+    width: 19rem;
+    left: 30%;
+    top: 23%;
+    padding: 1rem;
+  }
+  .titleBox {
+    margin: 5rem 0 0 0;
+  }
+  .aboutMe_info {
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    padding: 0 2rem 0 0;
+  }
+}

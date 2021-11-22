@@ -1,0 +1,125 @@
+@import "../SCSS/variables";
+@import "../SCSS/mediaQueries";
+.contactMeSection {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.contactForm {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+  height: 70vh;
+  background-color: #4e4e6e;
+  border-radius: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 2rem;
+
+  h3 {
+    margin: 1rem;
+    color: $primary-color;
+    font-family: $font-family;
+    font-weight: 400;
+  }
+  button {
+    background-color: transparent;
+    color: #fdb550;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    border: 2px solid #fdb550;
+    border-radius: 30px;
+    width: 12rem;
+    height: 2.5rem;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.personalInfoInput {
+  width: 85%;
+  height: 1.4rem;
+  margin: 0.3rem;
+  align-self: center;
+  background-color: #d4d4d4;
+  border-style: none;
+}
+.mainTextInput {
+  height: 60%;
+  width: 85%;
+  align-self: center;
+  margin-top: 1rem;
+  background-color: #d4d4d4;
+  border-style: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color;
+
+  img {
+    height: 50px;
+    width: 50px;
+    margin: 6rem 1rem 2rem 1rem;
+  }
+  p {
+    color: white;
+    font-family: $font-family;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+}
+@media (max-width: $breakpoint-smallPhone) {
+  .footer {
+    height: 45%;
+    img {
+      height: 35px;
+      width: 35px;
+      margin: 8rem 1rem 1rem 1rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .contactMeSection {
+    height: 55vh;
+  }
+  .contactForm {
+    width: 70%;
+    height: 40vh;
+    margin-top: -2rem;
+  }
+  .footer {
+    bottom: 0;
+    height: 50%;
+  }
+  img {
+    top: 10%;
+  }
+}
+
+@media (min-width: $breakpoint-smallDesktop) and (max-height: 1200px) {
+  .contactMeSection {
+    height: 80vh;
+  }
+  .contactForm {
+    height: 60vh;
+    margin-top: -3rem;
+  }
+  img {
+    top: 20%;
+  }
+}
