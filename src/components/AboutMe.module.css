@@ -1,7 +1,8 @@
-.aboutMe_section {
+.aboutMeSection {
   height: 100vh;
   width: 100vw;
   position: relative;
+  min-height: 550px;
 }
 
 .backgroundBox {
@@ -32,26 +33,31 @@
   border-radius: 10px;
 }
 
-.aboutMe_image {
+.aboutMeImageMobile {
   position: absolute;
   left: 50%;
   top: 25%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1000px;
 }
 
-.aboutMe_info {
-  position: absolute;
-  margin-top: 10rem;
-  width: 100%;
+.aboutMeImageDesktop {
+  display: none;
+}
+
+.aboutMeInfo {
   padding: 0 3.5rem 0 3.5rem;
+  margin-top: 13rem;
   line-height: 1.5rem;
   font-family: Poppins, sans-serif, Helvetica;
   font-weight: 300;
   text-align: center;
 }
 
-.aboutMe_text {
+.aboutMeText {
   position: relative;
 }
 
@@ -72,13 +78,12 @@
   margin: 2.5rem;
 }
 
-@media (max-width: 370px) {
-  .aboutMe_image {
-    width: 12rem;
+@media (max-width: 375px) {
+  .aboutMeSection {
+    min-height: 600px;
   }
-  .aboutMe_info {
-    margin-top: 7rem;
-    font-size: 0.8rem;
+  .aboutMeInfo {
+    margin-top: 11rem;
   }
   .backgroundBox h2 {
     font-size: 2rem;
@@ -87,10 +92,11 @@
 }
 
 @media (min-width: 600px) {
-  .aboutMe_section {
+  .aboutMeSection {
     height: 60vh;
+    max-height: 800px;
   }
-  .aboutMe_section h2 {
+  .aboutMeSection h2 {
     font-size: 2.2rem;
   }
   .backgroundBox {
@@ -119,15 +125,23 @@
     width: 50%;
     height: 40vh;
   }
-  .aboutMe_image {
-    height: 15rem;
-    width: 35vw;
-    left: 29%;
+  .imageBox .aboutMeImageMobile {
+    display: none;
+  }
+  .imageBox .aboutMeImageDesktop {
+    position: absolute;
+    display: block;
+    left: 30%;
     top: 25%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 271px;
+    height: 271px;
+    border-radius: 1000px;
   }
   .titleBox {
     height: auto;
-    margin: 16vh 0 0 2rem;
+    margin: 10rem 0 0 2rem;
   }
   .titleBox h2 {
     padding: 0;
@@ -135,7 +149,7 @@
   .titleBox .spanLine {
     margin: 0.8rem 0 0 0;
   }
-  .aboutMe_info {
+  .aboutMeInfo {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,41 +161,55 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 0 3rem 0 0;
+    padding: 0 2rem 0 0;
     text-align: left;
     width: 40%;
-    margin: 1rem 0 0 2rem;
+    min-width: 300px;
+    margin: 1rem 1rem 0 2rem;
+  }
+  .iconsBox {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 2.5rem 0 0 0;
+  }
+  .iconsBox img {
+    margin: 0 2.5rem 0 0;
   }
 }
 
-@media (min-width: 1025px) and (max-height: 1200px) {
-  .aboutMe_section {
-    height: 90vh;
+@media (min-width: 992px) {
+  .aboutMeSection {
+    height: 100vh;
   }
-  .aboutMe_section h2 {
-    font-size: 2.4rem;
-    padding-top: 6rem;
+  .aboutMeSection h2 {
+    font-size: 2.2rem;
   }
-  .mainBox {
-    margin: auto;
-    width: 70%;
-    min-width: 70%;
-    max-width: 1000px;
+  .backgroundBox {
+    min-height: 300px;
   }
-  .aboutMe_image {
-    height: 19rem;
-    width: 19rem;
-    left: 30%;
-    top: 23%;
-    padding: 1rem;
+  .emptyBox {
+    width: 50%;
+    height: 100%;
+  }
+  .imageBox {
+    width: 50%;
+    height: 45vh;
+  }
+  .imageBox .aboutMeImageDesktop {
+    left: 32%;
+    width: 350px;
+    height: 350px;
   }
   .titleBox {
-    margin: 5rem 0 0 0;
+    height: auto;
+    margin: 14rem 0 0 4rem;
   }
-  .aboutMe_info {
-    margin: 1rem 0 0 0;
+  .aboutMeInfo {
+    padding: 0 4rem 0 0;
+    width: 25%;
+    margin: 1rem 1rem 0 4rem;
     font-size: 1.2rem;
-    padding: 0 2rem 0 0;
   }
 }
 /*# sourceMappingURL=AboutMe.module.css.map */

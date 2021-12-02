@@ -1,21 +1,158 @@
 @import "../SCSS/variables";
+@import "../SCSS/mediaQueries";
+
 .navBox {
-  display: none;
+  position: fixed;
   width: 100%;
-  height: 10vh;
+  height: auto;
+  z-index: 99;
+  background: transparent;
+}
+
+.menu {
+  background: #4e4e6e;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  z-index: 15;
+  transition: 0.8s ease-in-out;
+  transform: translateY(-120%);
+
+  ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 3rem;
+    li {
+      margin: 3rem;
+      text-decoration: none;
+    }
+  }
+
+  a {
+    font-size: 1.5rem;
+    color: #fec14f;
+  }
+}
+.active {
+  transform: translateY(0);
+}
+
+.hamburgerBox {
+  width: 50px;
+  height: 50px;
+  margin: 1rem 0 1rem 1rem;
+  position: fixed;
+  right: 5%;
+  z-index: 99999;
+}
+
+.iconBox {
+  height: 60px;
+  width: 70%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: $breakpoint-smallPhone) {
+  .iconBox {
+    margin: 0;
+  }
+  .iconBox {
+    margin: 0;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .hamburgerBox {
+    display: none;
+  }
+  .navBox {
+    display: none;
+  }
+  .header {
+    height: 5vh;
+    width: 100%;
+  }
+  .menu {
+    position: absolute;
+    transform: translateY(0);
+    background: transparent;
+
+    ul {
+      display: flex;
+      width: 90%;
+      justify-content: center;
+      margin: 0;
+
+      li {
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        cursor: pointer;
+      }
+    }
+    a {
+      width: 200px;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .menuFixed {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+    background-color: #6769ba;
+    ul {
+      height: 100%;
+      width: 70%;
+      li {
+        margin: auto;
+      }
+    }
+
+    a {
+      font-weight: 600;
+      color: #fdb550;
+      margin: auto;
+    }
+  }
+
+  .iconBox {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-smallDesktop) and (max-height: 1200px) {
+  .navBox {
+    width: 100%;
+    height: 10vh;
+  }
+  .menuFixed {
+    height: 8vh;
+  }
   nav {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     a {
       text-decoration: none;
       color: black;
       font-family: $font-family;
       font-size: 1rem;
       margin: 1rem 2rem 0 2rem;
+      cursor: pointer;
     }
   }
 }

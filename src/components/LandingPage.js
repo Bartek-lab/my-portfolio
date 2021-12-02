@@ -1,9 +1,10 @@
 import LandingImageMobile from "../images/landing_page_mobile.png";
-import LandingImageDesktop from "../images/landing_page_mobile.png";
+import LandingImageDesktop from "../images/landing_page_desktop.png";
 import classes from "./LandingPage.module.css";
+
 const LandingPage = () => {
   return (
-    <div className={classes.landingPage}>
+    <div className={classes.landingPage} id="landingPage">
       <div className={classes.mainBox}>
         <div className={classes.infoBox}>
           <h1 className={classes.title}>Welcome</h1>

@@ -3,7 +3,7 @@ import ItemsBox from "./ItemsBox";
 import skillsIcon from "../images/skills-icon.png";
 import toolsIcon from "../images/tools-icon.png";
 import Card from "./Card";
-const SkillsAndTools = () => {
+const SkillsAndTools = (props) => {
   const skills = [
     {
       name: "skills",
@@ -24,7 +24,7 @@ const SkillsAndTools = () => {
 
   return (
     <Card>
-      <div className={classes.skillsSection}>
+      <div className={classes.skillsSection} id="skillsAndTools">
         <div className={classes.mainBox}>
           <div className={classes.skillsText}>
             <h2>What can I do ?</h2>

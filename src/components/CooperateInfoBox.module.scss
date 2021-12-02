@@ -1,7 +1,7 @@
 @import "../SCSS/mediaQueries";
 .cooparateInfoBox {
   height: 20vh;
-  width: 80vw;
+  width: 80%;
   margin: auto;
   text-align: center;
   p {
@@ -25,14 +25,25 @@
   }
 }
 
-@media (min-width: $breakpoint-smallDesktop) and (max-height: 1200px) {
+@media (min-width: $breakpoint-smallDesktop) {
   .cooparateInfoBox {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
     height: 30vh;
     width: 80%;
   }
   .mainBox {
     max-width: 1000px;
     width: 80%;
-    margin: auto;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    h2 {
+      width: 80%;
+    }
+    p {
+      margin: 1rem 0 2rem 0;
+    }
   }
 }

@@ -7,7 +7,7 @@ const ItemsBox = (props) => {
         <img src={item.img} alt="skills_image" className={classes.image} />
         <ul>
           {item.items.map((item) => {
-            return <li>{item}</li>;
+            return <li key={item.id}>{item}</li>;
           })}
         </ul>
       </div>

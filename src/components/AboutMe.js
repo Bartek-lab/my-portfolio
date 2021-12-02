@@ -1,11 +1,13 @@
+import React from "react";
 import classes from "./AboutMe.module.css";
-import Image from "../images/photo_holder.png";
+import imageDesktop from "../images/aboutMe_page_desktop.png";
+import imageMobile from "../images/aboutMe_page_mobile.png";
 import LinkedinIcon from "../images/linkedin.png";
 import GitHubIcon from "../images/github-logo.png";
 
-const AboutMe = () => {
+const AboutMe = React.forwardRef((props, ref) => {
   return (
-    <div className={classes.aboutMe_section}>
+    <div className={classes.aboutMeSection} id="AboutMe" ref={ref}>
       <div className={classes.backgroundBox}>
         <div className={classes.emptyBox}></div>
         <div className={classes.titleBox}>
@@ -16,13 +18,18 @@ const AboutMe = () => {
       <div className={classes.mainBox}>
         <div className={classes.imageBox}>
           <img
-            src={Image}
+            src={imageDesktop}
             alt="AboutMe_photography"
-            className={classes.aboutMe_image}
+            className={classes.aboutMeImageDesktop}
+          />
+          <img
+            src={imageMobile}
+            alt="AboutMe_photography"
+            className={classes.aboutMeImageMobile}
           />
         </div>
-        <div className={classes.aboutMe_info}>
-          <article className={classes.aboutMe_text}>
+        <div className={classes.aboutMeInfo}>
+          <article className={classes.aboutMeText}>
             My name is Bartek, based in Poznań, Poland. I started learning
             front-end develompent one year ago. I’m glad that I can follow that
             path...
@@ -35,6 +42,6 @@ const AboutMe = () => {
       </div>
     </div>
   );
-};
+});
 
 export default AboutMe;

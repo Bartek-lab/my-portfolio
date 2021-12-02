@@ -1,6 +1,6 @@
 .cooparateInfoBox {
   height: 20vh;
-  width: 80vw;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -9,7 +9,7 @@
   margin: 1rem 1.5rem 0 1.5rem;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .cooparateInfoBox p {
     margin: 1rem auto auto auto;
   }
@@ -24,15 +24,31 @@
   }
 }
 
-@media (min-width: 1025px) and (max-height: 1200px) {
+@media (min-width: 992px) {
   .cooparateInfoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 30vh;
     width: 80%;
   }
   .mainBox {
     max-width: 1000px;
     width: 80%;
-    margin: auto;
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+  .mainBox h2 {
+    width: 80%;
+  }
+  .mainBox p {
+    margin: 1rem 0 2rem 0;
   }
 }
 /*# sourceMappingURL=CooperateInfoBox.module.css.map */
