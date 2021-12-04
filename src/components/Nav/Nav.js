@@ -2,10 +2,17 @@ import classes from "./Nav.module.css";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Squash as Hamburger } from "hamburger-react";
-import LinkedinIcon from "../images/linkedin.png";
-import GitHubIcon from "../images/github-logo.png";
+import LinkedinIcon from "../../images/linkedin.png";
+import GitHubIcon from "../../images/github-logo.png";
+import {
+  FaHome,
+  FaIdCard,
+  FaTools,
+  FaKeyboard,
+  FaComment,
+} from "react-icons/fa";
 
-const Nav = (props) => {
+const Nav = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -23,8 +30,14 @@ const Nav = (props) => {
       <nav
         className={`${
           isOpen ? [classes.menu, classes.active].join(" ") : classes.menu
-        } ${!props.isVisible ? classes.menuFixed : ""}`}
+        }`}
         onClick={() => {
+          setOpen(!isOpen);
+        }}
+        onMouseOver={() => {
+          setOpen(true);
+        }}
+        onMouseOut={() => {
           setOpen(false);
         }}
       >
@@ -38,7 +51,12 @@ const Nav = (props) => {
                 setOpen(false);
               }}
             >
-              Home
+              <div className={classes.menuIcon}>
+                <FaHome />
+              </div>
+              <div className={classes.linkName}>
+                <p>Home</p>
+              </div>
             </Link>
           </li>
           <li>
@@ -50,7 +68,8 @@ const Nav = (props) => {
                 setOpen(false);
               }}
             >
-              About me
+              <FaIdCard />
+              <div className={classes.linkName}> About me</div>
             </Link>
           </li>
           <li>
@@ -62,7 +81,8 @@ const Nav = (props) => {
                 setOpen(false);
               }}
             >
-              SkillsAndTools
+              <FaTools />
+              <div className={classes.linkName}> SkillsAndTools</div>
             </Link>
           </li>
           <li>
@@ -74,7 +94,8 @@ const Nav = (props) => {
                 setOpen(false);
               }}
             >
-              Projects
+              <FaKeyboard />
+              <div className={classes.linkName}> Projects</div>
             </Link>
           </li>
           <li>
@@ -86,7 +107,9 @@ const Nav = (props) => {
                 setOpen(false);
               }}
             >
-              Contact Me
+              {" "}
+              <FaComment />
+              <div className={classes.linkName}> Contact Me</div>
             </Link>
           </li>
         </ul>

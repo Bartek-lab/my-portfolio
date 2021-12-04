@@ -44,7 +44,7 @@
 }
 @media (min-width: $breakpoint-tablet) {
   .skillsSection {
-    height: 40vh;
+    height: 20vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -64,6 +64,10 @@
       height: 13rem;
       max-height: 13rem;
     }
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
     article {
       margin: 0 2rem 0 0;
       padding: 0;
@@ -78,7 +82,7 @@
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+
     justify-content: space-around;
   }
 }

@@ -1,5 +1,5 @@
-@import "../SCSS/variables";
-@import "../SCSS/mediaQueries";
+@import "../../SCSS/variables";
+@import "../../SCSS/mediaQueries";
 
 .skillsBox {
   height: 13rem;
@@ -46,6 +46,8 @@
     font-size: 0.8rem;
     width: 140px;
     height: 13rem;
+    margin: 0;
+
     img {
       width: 40%;
       height: 40%;

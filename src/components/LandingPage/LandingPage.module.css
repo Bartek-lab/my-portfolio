@@ -77,7 +77,7 @@
 
 @media (min-width: 600px) {
   .landingPage {
-    height: 95vh;
+    height: 100vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -136,6 +136,7 @@
   .landingImage {
     position: relative;
     width: 50%;
+    margin-left: 0.5rem;
   }
   .landingImage .landingImageMobile {
     display: block;
@@ -146,7 +147,7 @@
 
 @media (min-width: 992px) {
   .landingPage {
-    height: 95vh;
+    height: 100vh;
   }
   .mainBox {
     width: 70%;

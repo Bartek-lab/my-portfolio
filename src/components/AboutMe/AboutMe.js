@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./AboutMe.module.css";
-import imageDesktop from "../images/aboutMe_page_desktop.png";
-import imageMobile from "../images/aboutMe_page_mobile.png";
-import LinkedinIcon from "../images/linkedin.png";
-import GitHubIcon from "../images/github-logo.png";
+import imageDesktop from "../../images/aboutMe_page_desktop.png";
+import imageMobile from "../../images/aboutMe_page_mobile.png";
+import LinkedinIcon from "../../images/linkedin.png";
+import GitHubIcon from "../../images/github-logo.png";
 
 const AboutMe = React.forwardRef((props, ref) => {
   return (
-    <div className={classes.aboutMeSection} id="AboutMe" ref={ref}>
-      <div className={classes.backgroundBox}>
+    <div className={classes.aboutMeSection} id="AboutMe">
+      <div className={classes.backgroundBox} ref={ref}>
         <div className={classes.emptyBox}></div>
         <div className={classes.titleBox}>
           <h2>About me</h2>

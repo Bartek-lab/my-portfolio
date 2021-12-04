@@ -1,5 +1,5 @@
 import classes from "./Projects.module.css";
-import Card from "./Card";
+import Card from "../Card";
 const Projects = () => {
   return (
     <Card>

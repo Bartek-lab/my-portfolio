@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailJs from "emailjs-com";
 import classes from "./ContactMe.module.css";
-import GitHubIcon from "../images/github-logo.png";
+import GitHubIcon from "../../images/github-logo.png";
 
 const ContactMe = () => {
   const form = useRef();

@@ -29,17 +29,31 @@
 }
 
 .menu ul {
-  text-align: center;
   list-style: none;
   margin-top: 3rem;
 }
 
 .menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 3rem;
   text-decoration: none;
 }
 
+.menu .menuIcon {
+  width: 20%;
+}
+
 .menu a {
+  width: 80%;
   font-size: 1.5rem;
   color: #fec14f;
 }
@@ -84,59 +98,63 @@
 }
 
 @media (min-width: 600px) {
+  .header {
+    height: 0vh;
+  }
   .hamburgerBox {
     display: none;
   }
-  .navBox {
-    display: none;
-  }
-  .header {
-    height: 5vh;
-    width: 100%;
-  }
   .menu {
-    position: absolute;
+    position: fixed;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
     background: transparent;
+    left: 0;
+    top: 15%;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    width: 4rem;
+    height: 70%;
+    background: #fdb550;
   }
   .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: 0;
   }
-  .menu ul li {
-    margin: 0.5rem 0.5rem 0 0.5rem;
-    cursor: pointer;
-  }
   .menu a {
+    color: black;
+  }
+  .menu::after {
+    content: "";
+    background-image: url(../../images/open-menu.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5rem;
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 40%;
+    left: 4rem;
+    z-index: 1;
+    background-color: #fdb550;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .linkName {
+    display: none;
+  }
+  a {
     width: 200px;
     color: black;
     font-size: 1rem;
+    text-align: center;
+    z-index: 9999;
   }
-  .menuFixed {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 6vh;
-    background-color: #6769ba;
-  }
-  .menuFixed ul {
-    height: 100%;
-    width: 70%;
-  }
-  .menuFixed ul li {
-    margin: auto;
-  }
-  .menuFixed a {
-    font-weight: 600;
-    color: #fdb550;
-    margin: auto;
+  .active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .iconBox {
     display: none;

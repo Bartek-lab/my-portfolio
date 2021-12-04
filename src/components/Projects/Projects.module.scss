@@ -1,5 +1,5 @@
-@import "../SCSS/variables";
-@import "../SCSS/mediaQueries";
+@import "../../SCSS/variables";
+@import "../../SCSS/mediaQueries";
 .projectSection {
   height: 85vh;
   width: 80vw;
@@ -40,7 +40,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../images/Unique-travel.png");
+    url("../../images/Unique-travel.png");
   margin: 3rem auto 2rem auto;
   border-radius: 20px;
   a {
@@ -62,7 +62,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../images/veggie.png");
+    url("../../images/veggie.png");
   border-radius: 20px;
   margin: 3rem auto 2rem auto;
   a {
@@ -151,9 +151,9 @@
   }
 
   .projectSection {
-    height: 50vh;
+    height: auto;
     width: 100%;
-    margin: auto;
+
     display: flex;
     text-align: left;
     align-items: center;

@@ -1,5 +1,5 @@
-@import "../SCSS/variables";
-@import "../SCSS/mediaQueries";
+@import "../../SCSS/variables";
+@import "../../SCSS/mediaQueries";
 
 .landingPage {
   height: 100vh;
@@ -64,7 +64,7 @@
 
 @media (min-width: $breakpoint-tablet) {
   .landingPage {
-    height: 95vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
   }
@@ -103,11 +103,7 @@
   .landingImage {
     position: relative;
     width: 50%;
-    // .landingImageMobile {
-    //   height: 25vh;
-    //   max-height: 25vh;
-    //   width: 24vh;
-    // }
+    margin-left: 0.5rem;
     .landingImageMobile {
       display: block;
       height: 240px;
@@ -118,7 +114,7 @@
 
 @media (min-width: $breakpoint-smallDesktop) {
   .landingPage {
-    height: 95vh;
+    height: 100vh;
   }
   .mainBox {
     width: 70%;
@@ -159,6 +155,4 @@
       width: 378px;
     }
   }
-}
-@media (min-width: $breakpoint-smallDesktop) and (orientation: landscape) {
 }

@@ -1,5 +1,5 @@
-import LandingImageMobile from "../images/landing_page_mobile.png";
-import LandingImageDesktop from "../images/landing_page_desktop.png";
+import LandingImageMobile from "../../images/landing_page_mobile.png";
+import LandingImageDesktop from "../../images/landing_page_desktop.png";
 import classes from "./LandingPage.module.css";
 
 const LandingPage = () => {

@@ -1,8 +1,8 @@
 import classes from "./SkillsAndTools.module.css";
-import ItemsBox from "./ItemsBox";
-import skillsIcon from "../images/skills-icon.png";
-import toolsIcon from "../images/tools-icon.png";
-import Card from "./Card";
+import ItemsBox from "../ItemsBox/ItemsBox";
+import skillsIcon from "../../images/skills-icon.png";
+import toolsIcon from "../../images/tools-icon.png";
+import Card from "../Card";
 const SkillsAndTools = (props) => {
   const skills = [
     {

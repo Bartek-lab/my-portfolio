@@ -141,7 +141,7 @@
   }
   .titleBox {
     height: auto;
-    margin: 10rem 0 0 2rem;
+    margin: 9rem 0 0 2rem;
   }
   .titleBox h2 {
     padding: 0;
@@ -164,7 +164,7 @@
     padding: 0 2rem 0 0;
     text-align: left;
     width: 40%;
-    min-width: 300px;
+    min-width: 250px;
     margin: 1rem 1rem 0 2rem;
   }
   .iconsBox {
@@ -207,7 +207,7 @@
   }
   .aboutMeInfo {
     padding: 0 4rem 0 0;
-    width: 25%;
+    width: 27%;
     margin: 1rem 1rem 0 4rem;
     font-size: 1.2rem;
   }

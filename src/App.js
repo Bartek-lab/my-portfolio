@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import "./App.scss";
-import LandingPage from "./components/LandingPage.js";
-import AboutMe from "./components/AboutMe";
-import SkillsAndTools from "./components/SkillsAndTools";
-import Projects from "./components/Projects.js";
-import ContactMe from "./components/ContactMe.js";
-import CooperateInfoBox from "./components/CooperateInfoBox";
-import Nav from "./components/Nav";
+import LandingPage from "./components/LandingPage/LandingPage";
+import AboutMe from "./components//AboutMe/AboutMe";
+import SkillsAndTools from "./components/SkillsAndTools/SkillsAndTools";
+import Projects from "./components/Projects/Projects";
+import ContactMe from "./components/ContactMe/ContactMe.js";
+import CooperateInfoBox from "./components/CooperateInfoBox/CooperateInfoBox";
+import Nav from "./components/Nav/Nav";
 import useElementOnScreen from "./Hooks/useElementOnScreen";
 function App() {
   const targetRef = useRef(null);

@@ -48,7 +48,7 @@
 
 @media (min-width: 600px) {
   .skillsSection {
-    height: 40vh;
+    height: 20vh;
     width: 100%;
     margin: auto;
     display: -webkit-box;
@@ -75,6 +75,10 @@
     height: 13rem;
     max-height: 13rem;
   }
+  .skillsSection h2 {
+    margin: 0;
+    padding: 0;
+  }
   .skillsSection article {
     margin: 0 2rem 0 0;
     padding: 0;
@@ -91,9 +95,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
