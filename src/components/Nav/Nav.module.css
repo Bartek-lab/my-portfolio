@@ -31,31 +31,39 @@
 .menu ul {
   list-style: none;
   margin-top: 3rem;
+  width: 100%;
 }
 
 .menu ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 3rem;
   text-decoration: none;
+  margin: 4rem auto 0 auto;
+  width: 40%;
+}
+
+.menu ul li p {
+  font-size: 1.5rem;
+  color: #fec14f;
+  margin-right: 1rem;
+}
+
+.menu ul li a {
+  font-size: 1.5rem;
+  color: #fec14f;
+  margin: 0;
 }
 
 .menu .menuIcon {
   width: 20%;
-}
-
-.menu a {
-  width: 80%;
-  font-size: 1.5rem;
-  color: #fec14f;
 }
 
 .active {
@@ -75,7 +83,7 @@
 .iconBox {
   height: 60px;
   width: 70%;
-  margin-top: 4rem;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,18 +120,27 @@
             transform: translateX(-4rem);
     background: transparent;
     left: 0;
-    top: 15%;
+    top: 20%;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
     width: 4rem;
-    height: 70%;
+    height: 50%;
     background: #fdb550;
   }
   .menu ul {
-    margin: 0;
+    margin: auto;
   }
-  .menu a {
+  .menu ul li {
+    margin: 3rem auto 3rem auto;
+  }
+  .menu ul li p {
+    width: 200px;
     color: black;
+    font-size: 1.6rem;
+    z-index: 9999;
+  }
+  .menu ul li a {
+    width: 2rem;
   }
   .menu::after {
     content: "";
@@ -145,13 +162,6 @@
   .linkName {
     display: none;
   }
-  a {
-    width: 200px;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-    z-index: 9999;
-  }
   .active {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -161,13 +171,13 @@
   }
 }
 
-@media (min-width: 992px) and (max-height: 1200px) {
+@media (min-width: 992px) {
   .navBox {
     width: 100%;
     height: 10vh;
   }
-  .menuFixed {
-    height: 8vh;
+  .menu {
+    height: 60%;
   }
   nav {
     width: 100%;
@@ -186,12 +196,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  nav a {
+  nav p {
     text-decoration: none;
     color: black;
     font-family: Poppins, sans-serif, Helvetica;
     font-size: 1rem;
-    margin: 1rem 2rem 0 2rem;
+    margin: auto;
     cursor: pointer;
   }
 }

@@ -16,6 +16,20 @@ const AboutMe = React.forwardRef((props, ref) => {
         </div>
       </div>
       <div className={classes.mainBox}>
+        <div className={classes.aboutMeInfo}>
+          <article className={classes.aboutMeText}>
+            Hi 🖖
+            <br />
+            Hi I'm Bartek, My journey with web development has started in last
+            days of 2020, because I decided to change proffesion and dive into a
+            web development. Since that time I spend many hours to improve my
+            skills,and it brings me a lot of satisfaction.
+          </article>
+          <div className={classes.iconsBox}>
+            <img src={GitHubIcon} alt="github_profile"></img>
+            <img src={LinkedinIcon} alt="linkedin_profile"></img>
+          </div>
+        </div>
         <div className={classes.imageBox}>
           <img
             src={imageDesktop}
@@ -27,17 +41,6 @@ const AboutMe = React.forwardRef((props, ref) => {
             alt="AboutMe_photography"
             className={classes.aboutMeImageMobile}
           />
-        </div>
-        <div className={classes.aboutMeInfo}>
-          <article className={classes.aboutMeText}>
-            My name is Bartek, based in Poznań, Poland. I started learning
-            front-end develompent one year ago. I’m glad that I can follow that
-            path...
-          </article>
-          <div className={classes.iconsBox}>
-            <img src={GitHubIcon} alt="github_profile"></img>
-            <img src={LinkedinIcon} alt="linkedin_profile"></img>
-          </div>
         </div>
       </div>
     </div>

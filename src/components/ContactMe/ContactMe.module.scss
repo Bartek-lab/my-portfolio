@@ -111,9 +111,9 @@
   .footer {
     bottom: 0;
     height: 50%;
-  }
-  img {
-    top: 10%;
+    img {
+      top: 10%;
+    }
   }
 }
 
@@ -125,7 +125,9 @@
     height: 60vh;
     margin-top: -3rem;
   }
-  img {
-    top: 20%;
+  .footer {
+    img {
+      top: 20%;
+    }
   }
 }

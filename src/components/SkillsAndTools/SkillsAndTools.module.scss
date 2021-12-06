@@ -1,8 +1,9 @@
-@import "../SCSS/variables";
-@import "../SCSS/mediaQueries";
+@import "../../SCSS/variables";
+@import "../../SCSS/mediaQueries";
 .skillsSection {
-  height: 90vh;
+  height: auto;
   text-align: center;
+  margin-top: 3rem;
   min-height: 600px;
   .skillsText {
     margin: 0 2rem 0 2rem;
@@ -13,10 +14,15 @@
     padding-top: 2rem;
   }
   article {
-    margin: 1rem auto 5rem auto;
+    margin: 1rem auto 0 auto;
     padding: 1rem;
     font-family: $font-family;
     font-weight: 300;
+  }
+  p {
+    font-family: $font-family;
+    font-weight: 300;
+    width: 90%;
   }
   .spanLine {
     position: relative;
@@ -44,19 +50,18 @@
 }
 @media (min-width: $breakpoint-tablet) {
   .skillsSection {
-    height: 20vh;
     width: 100%;
+    min-height: 500px;
     margin: auto;
     display: flex;
     text-align: left;
     align-items: center;
     justify-content: center;
-
     .mainBox {
       display: flex;
       height: 17rem;
+      width: 80%;
     }
-
     .skillsText {
       margin: 0;
       width: 50%;
@@ -72,44 +77,49 @@
       margin: 0 2rem 0 0;
       padding: 0;
     }
+
     .spanLine {
       margin: 1rem 0 1rem 0;
     }
   }
-
   .infoTools {
     width: 50%;
-
     display: flex;
     flex-direction: row;
-
     justify-content: space-around;
   }
 }
 
 @media (min-width: $breakpoint-smallDesktop) {
   .skillsSection {
-    height: 70vh;
-    width: 80%;
-
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
     .mainBox {
       display: flex;
+
       height: auto;
+      width: 65%;
     }
 
     .skillsText {
       margin: 0;
       width: 50%;
       text-align: left;
+      h2 {
+        font-size: 2rem;
+      }
+      article {
+        margin: 0 8rem 0 0;
+        min-width: 18rem;
+        font-size: 1.2rem;
+      }
+      p {
+        margin: 0;
+      }
     }
-    h2 {
-      font-size: 2rem;
-    }
-    article {
-      margin: 0 2rem 0 0;
-      padding: 0 4rem 0 0;
-      font-size: 1.2rem;
-    }
+
     .spanLine {
       margin: 1rem 0 1rem 0;
     }

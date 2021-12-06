@@ -7,15 +7,16 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-
+  text-align: center;
   h2 {
+    margin: 7rem 0 0 0;
     font-size: 1.8rem;
   }
   article {
     font-family: $font-family;
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -63,6 +64,7 @@
       rgba(0, 0, 0, 0.8) 100%
     ),
     url("../../images/veggie.png");
+  background-position: right;
   border-radius: 20px;
   margin: 3rem auto 2rem auto;
   a {
@@ -80,29 +82,12 @@
 @media (max-width: $breakpoint-smallPhone) {
   .projectSection {
     height: 90vh;
-
-    h2 {
-      font-size: 1.7rem;
-      margin: 4rem auto 0 auto;
-    }
-  }
-
-  .offerImgUnique {
-    width: 200px;
-  }
-  .offerImgVeggie {
-    width: 200px;
-  }
-}
-@media (max-width: $breakpoint-smallPhone) {
-  .projectSection {
-    height: 90vh;
     h2 {
       font-size: 1.7rem;
       margin: 4rem auto auto auto;
     }
     p {
-      margin: 2rem auto auto auto;
+      margin: 0 auto 0.5rem auto;
     }
   }
 
@@ -118,7 +103,6 @@
     width: 50%;
     display: flex;
     flex-direction: row;
-
     justify-content: space-around;
 
     p {
@@ -141,6 +125,9 @@
     height: 13rem;
 
     max-height: 13rem;
+    h2 {
+      margin: 0;
+    }
     article {
       margin: 0 2rem 0 0;
       padding: 0;
@@ -167,7 +154,7 @@
   .mainBox {
     display: flex;
     height: 17rem;
-    width: 100%;
+    width: 80%;
   }
 
   .offerImgUnique {
@@ -183,16 +170,22 @@
 }
 @media (min-width: $breakpoint-smallDesktop) {
   .projectSection {
-    height: 40vh;
-    width: 80%;
+    height: 35vh;
     text-align: left;
     p {
       padding: 0;
       margin: 0 2rem 2.5rem 0;
     }
     h2 {
+      margin: 0;
       font-size: 2rem;
     }
+  }
+  .mainBox {
+    width: 65%;
+    display: flex;
+    height: auto;
+    align-items: center;
   }
   .infoBox {
     width: 50%;
@@ -200,9 +193,9 @@
     max-height: 300px;
 
     article {
-      margin: 0;
-      padding: 0 4rem 0 0;
+      margin: 0 8rem 0 0;
       font-size: 1.2rem;
+      min-width: 18rem;
     }
     .spanLine {
       margin: 1rem 0 1rem 0;
@@ -213,12 +206,6 @@
     height: 300px;
   }
 
-  .mainBox {
-    display: flex;
-    height: auto;
-    align-items: center;
-  }
-
   .sideProjects {
     width: 50%;
     min-width: 380px;
@@ -226,15 +213,11 @@
     flex-direction: row;
     justify-content: space-around;
 
-    article {
-      display: block;
-      font-size: 1rem;
-      font-family: $font-family;
-      font-style: italic;
-      width: 80%;
-    }
     p {
-      margin: 1rem 0 1rem 0.4rem;
+      font-family: $font-family;
+      font-size: 1rem;
+      font-weight: 100;
+      margin: 2rem 0 1rem 0.4rem;
     }
   }
   .offerImgUnique {

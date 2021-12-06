@@ -1,54 +1,59 @@
-.cooparateInfoBox {
+.cooperateInfoBox p {
+  font-family: Poppins, sans-serif, Helvetica;
+  font-weight: 300;
+  margin: 1rem 1.5rem 0 1.5rem;
+}
+
+.cooperateInfoBox h3 {
+  margin: 2rem auto 0 auto;
+}
+
+.mainBox {
   height: 20vh;
   width: 80%;
   margin: auto;
   text-align: center;
 }
 
-.cooparateInfoBox p {
-  margin: 1rem 1.5rem 0 1.5rem;
-}
-
 @media (max-width: 375px) {
-  .cooparateInfoBox p {
-    margin: 1rem auto auto auto;
+  .cooperateInfoBox p {
+    margin: 1rem auto 0 auto;
   }
 }
 
 @media (min-width: 600px) {
-  .cooparateInfoBox {
+  .cooperateInfoBox {
+    max-height: 200px;
+  }
+  .cooperateInfoBox h3 {
     text-align: left;
   }
-  .cooparateInfoBox p {
+  .cooperateInfoBox p {
+    text-align: left;
     margin: 1rem 0 0 0;
   }
 }
 
 @media (min-width: 992px) {
-  .cooparateInfoBox {
+  .cooperateInfoBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 30vh;
-    width: 80%;
+    height: 400px;
   }
   .mainBox {
-    max-width: 1000px;
-    width: 80%;
-    margin: 0 0 2rem 0;
-    text-align: center;
-  }
-  .mainBox h2 {
-    width: 80%;
+    width: 65%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
   }
   .mainBox p {
     margin: 1rem 0 2rem 0;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=CooperateInfoBox.module.css.map */

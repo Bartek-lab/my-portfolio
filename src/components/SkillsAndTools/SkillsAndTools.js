@@ -2,7 +2,7 @@ import classes from "./SkillsAndTools.module.css";
 import ItemsBox from "../ItemsBox/ItemsBox";
 import skillsIcon from "../../images/skills-icon.png";
 import toolsIcon from "../../images/tools-icon.png";
-import Card from "../Card";
+
 const SkillsAndTools = (props) => {
   const skills = [
     {
@@ -23,25 +23,33 @@ const SkillsAndTools = (props) => {
   ];
 
   return (
-    <Card>
-      <div className={classes.skillsSection} id="skillsAndTools">
-        <div className={classes.mainBox}>
-          <div className={classes.skillsText}>
-            <h2>What can I do ?</h2>
-            <span className={classes.spanLine}></span>
-            <article>
-              I’m always trying to write clean code, with high performence
-              effects. If you have any tasks for me, send and e-mail and expect
-              quickly answer.
-            </article>
-          </div>
-          <div className={classes.infoTools}>
-            <ItemsBox skills={skills} />
-            <ItemsBox skills={tools} />
-          </div>
+    <div className={classes.skillsSection} id="skillsAndTools">
+      <div className={classes.mainBox}>
+        <div className={classes.skillsText}>
+          <h2>What can I do?</h2>
+          <span className={classes.spanLine}></span>
+          <article>
+            I’m always trying to write clean code, with high performence
+            effects.
+            <br />
+            Every time I'm looking for the best solution for a specific problem.
+            <br />
+            If you have any tasks for me, just send me a DM.
+          </article>
+          <p>
+            💭 I trully fell in love with ReactJs, but I'm not scared of tasks
+            in VanillaJs or clean CSS as well.
+          </p>
+        </div>
+        <div className={classes.infoTools}>
+          <ItemsBox skills={skills} />
+          <ItemsBox skills={tools} />
         </div>
       </div>
-    </Card>
+      <div>
+        <p className={classes.skillsText}></p>
+      </div>
+    </div>
   );
 };
 

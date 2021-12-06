@@ -51,12 +51,10 @@ const Nav = () => {
                 setOpen(false);
               }}
             >
-              <div className={classes.menuIcon}>
+              <p>
                 <FaHome />
-              </div>
-              <div className={classes.linkName}>
-                <p>Home</p>
-              </div>
+              </p>
+              <div className={classes.linkName}> Home</div>
             </Link>
           </li>
           <li>
@@ -68,7 +66,9 @@ const Nav = () => {
                 setOpen(false);
               }}
             >
-              <FaIdCard />
+              <p>
+                <FaIdCard />
+              </p>
               <div className={classes.linkName}> About me</div>
             </Link>
           </li>
@@ -81,7 +81,9 @@ const Nav = () => {
                 setOpen(false);
               }}
             >
-              <FaTools />
+              <p>
+                <FaTools />
+              </p>
               <div className={classes.linkName}> SkillsAndTools</div>
             </Link>
           </li>
@@ -94,7 +96,9 @@ const Nav = () => {
                 setOpen(false);
               }}
             >
-              <FaKeyboard />
+              <p>
+                <FaKeyboard />
+              </p>
               <div className={classes.linkName}> Projects</div>
             </Link>
           </li>
@@ -107,8 +111,9 @@ const Nav = () => {
                 setOpen(false);
               }}
             >
-              {" "}
-              <FaComment />
+              <p>
+                <FaComment />
+              </p>
               <div className={classes.linkName}> Contact Me</div>
             </Link>
           </li>

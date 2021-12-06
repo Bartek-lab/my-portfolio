@@ -1,49 +1,58 @@
 @import "../../SCSS/mediaQueries";
-.cooparateInfoBox {
+@import "../../SCSS/variables";
+.cooperateInfoBox {
+  p {
+    font-family: $font-family;
+    font-weight: 300;
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
+  h3 {
+    margin: 2rem auto 0 auto;
+  }
+}
+.mainBox {
   height: 20vh;
   width: 80%;
   margin: auto;
   text-align: center;
-  p {
-    margin: 1rem 1.5rem 0 1.5rem;
-  }
 }
 
 @media (max-width: $breakpoint-smallPhone) {
-  .cooparateInfoBox {
+  .cooperateInfoBox {
     p {
-      margin: 1rem auto auto auto;
+      margin: 1rem auto 0 auto;
     }
   }
 }
 @media (min-width: $breakpoint-tablet) {
-  .cooparateInfoBox {
-    text-align: left;
+  .cooperateInfoBox {
+    max-height: 200px;
+    h3 {
+      text-align: left;
+    }
     p {
+      text-align: left;
       margin: 1rem 0 0 0;
     }
   }
 }
 
 @media (min-width: $breakpoint-smallDesktop) {
-  .cooparateInfoBox {
+  .cooperateInfoBox {
     display: flex;
-    justify-content: center;
-
+    width: 100%;
     align-items: center;
-    height: 30vh;
-    width: 80%;
+    height: 400px;
   }
   .mainBox {
-    max-width: 1000px;
-    width: 80%;
-    margin: 0 0 2rem 0;
-    text-align: center;
-    h2 {
-      width: 80%;
-    }
+    width: 65%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+
     p {
       margin: 1rem 0 2rem 0;
+      text-align: left;
     }
   }
 }

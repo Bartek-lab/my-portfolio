@@ -16,7 +16,7 @@
   justify-content: center;
 }
 .infoBox {
-  margin: 7rem 5rem 0rem 5rem;
+  margin: 9rem 5rem 0rem 5rem;
   text-align: center;
 }
 .title {
@@ -49,15 +49,19 @@
   border-radius: 30px;
   width: 12rem;
   height: 3.5rem;
+  a {
+    font-size: 1.3rem;
+    color: #fec14f;
+  }
 }
 
 @media (max-width: $breakpoint-smallPhone) {
   .infoBox {
-    margin: 6rem 2rem 0 2rem;
+    margin: 35% 2rem 0 2rem;
   }
   .landingImage {
     .landingImageMobile {
-      width: 80%;
+      width: 70%;
     }
   }
 }
@@ -69,7 +73,8 @@
     align-items: center;
   }
   .mainBox {
-    width: 90%;
+    margin-top: 3rem;
+    width: 80%;
     height: 25vh;
     display: flex;
     flex-direction: row;
@@ -79,18 +84,17 @@
   }
   .infoBox {
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 4rem;
-    text-align: left;
+    margin: 0;
     height: 100%;
     max-height: 25vh;
-
-    width: 30%;
+    width: 50%;
   }
   .mainText {
-    margin: 2rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     height: 4rem;
     width: 11rem;
   }
@@ -103,7 +107,7 @@
   .landingImage {
     position: relative;
     width: 50%;
-    margin-left: 0.5rem;
+
     .landingImageMobile {
       display: block;
       height: 240px;
@@ -117,31 +121,31 @@
     height: 100vh;
   }
   .mainBox {
-    width: 70%;
+    width: 65%;
     height: 40vh;
-    margin-bottom: 4rem;
   }
   .infoBox {
-    margin: 0;
     padding: 0;
-    max-height: 30vh;
-    width: 40%;
+    max-height: 35vh;
+    margin-top: 1.5rem;
+    width: 50%;
   }
   .title {
+    margin-right: 4rem;
     font-size: 3rem;
-    width: 14rem;
+    width: 16rem;
   }
   .mainText {
-    margin: 2.5rem 0 1rem 0;
+    margin: 2rem 4rem 1rem 0;
     height: 6rem;
-    width: 14rem;
+    width: 16rem;
     font-size: 1.4rem;
   }
 
   .mainButton {
     font-size: 1.5rem;
-    margin: 2rem 2rem 0 0;
-    width: 12rem;
+    margin: 2rem 4rem 0 0;
+    width: 16rem;
   }
   .landingImage {
     width: 50%;
@@ -153,6 +157,7 @@
       display: block;
       height: 284px;
       width: 378px;
+      margin-left: -2rem;
     }
   }
 }

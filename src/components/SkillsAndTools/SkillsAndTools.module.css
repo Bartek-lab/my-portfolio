@@ -1,6 +1,7 @@
 .skillsSection {
-  height: 90vh;
+  height: auto;
   text-align: center;
+  margin-top: 3rem;
   min-height: 600px;
 }
 
@@ -15,10 +16,16 @@
 }
 
 .skillsSection article {
-  margin: 1rem auto 5rem auto;
+  margin: 1rem auto 0 auto;
   padding: 1rem;
   font-family: Poppins, sans-serif, Helvetica;
   font-weight: 300;
+}
+
+.skillsSection p {
+  font-family: Poppins, sans-serif, Helvetica;
+  font-weight: 300;
+  width: 90%;
 }
 
 .skillsSection .spanLine {
@@ -48,8 +55,8 @@
 
 @media (min-width: 600px) {
   .skillsSection {
-    height: 20vh;
     width: 100%;
+    min-height: 500px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67,6 +74,7 @@
     display: -ms-flexbox;
     display: flex;
     height: 17rem;
+    width: 80%;
   }
   .skillsSection .skillsText {
     margin: 0;
@@ -102,27 +110,38 @@
 
 @media (min-width: 992px) {
   .skillsSection {
-    height: 70vh;
-    width: 80%;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
   }
   .skillsSection .mainBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: auto;
+    width: 65%;
   }
   .skillsSection .skillsText {
     margin: 0;
     width: 50%;
     text-align: left;
   }
-  .skillsSection h2 {
+  .skillsSection .skillsText h2 {
     font-size: 2rem;
   }
-  .skillsSection article {
-    margin: 0 2rem 0 0;
-    padding: 0 4rem 0 0;
+  .skillsSection .skillsText article {
+    margin: 0 8rem 0 0;
+    min-width: 18rem;
     font-size: 1.2rem;
+  }
+  .skillsSection .skillsText p {
+    margin: 0;
   }
   .skillsSection .spanLine {
     margin: 1rem 0 1rem 0;
