@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailJs from "emailjs-com";
 import classes from "./ContactMe.module.css";
-import GitHubIcon from "../../images/github-logo.png";
+import IconsBox from "../IconsBox/IconsBox";
 
 const ContactMe = () => {
   const form = useRef();
@@ -128,10 +128,12 @@ const ContactMe = () => {
       </form>
 
       <div className={classes.footer}>
-        <img src={GitHubIcon} alt="github_profile" />
-        <p>E-mail : bartosz.benedyczak@gmail.com</p>
-        <p>Bartek Benedyczak</p>
-        <p>Poznań, Poland</p>
+        <div className={classes.footerInfoBox}>
+          <IconsBox />
+          <p>E-mail : bartosz.benedyczak@gmail.com</p>
+          <p>Bartek Benedyczak</p>
+          <p>Poznań, Poland</p>
+        </div>
       </div>
     </div>
   );

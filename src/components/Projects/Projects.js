@@ -1,6 +1,9 @@
+import { useState } from "react";
 import classes from "./Projects.module.css";
 
 const Projects = () => {
+  const [onHoverVeggie, setOnHoverVeggie] = useState(false);
+  const [onHoverUniqueTravel, setOnHoverUniqueTravel] = useState(false);
   return (
     <div>
       <div className={classes.projectSection} id="myProjects">
@@ -21,11 +24,38 @@ const Projects = () => {
           </div>
           <div className={classes.sideProjects}>
             <div className={classes.projectBox}>
-              <div className={classes.offerImgUnique}>
-                <a href="./Projects">Unique-travel</a>
-              </div>
-              <div>
-                <p className={classes.projectDescription}>
+              <a href="https://peaceful-wing-9d34ed.netlify.app/">
+                <div
+                  className={`${
+                    onHoverUniqueTravel
+                      ? [
+                          classes.offerImgUnique,
+                          classes.activeUniqueTravel,
+                        ].join(" ")
+                      : classes.offerImgUnique
+                  }`}
+                  onMouseOver={() =>
+                    setOnHoverUniqueTravel(!onHoverUniqueTravel)
+                  }
+                  onMouseOut={() => {
+                    setOnHoverUniqueTravel(false);
+                  }}
+                >
+                  <p
+                    className={`${
+                      onHoverVeggie
+                        ? [classes.projectName, classes.activeProjectName].join(
+                            " "
+                          )
+                        : classes.projectName
+                    }`}
+                  >
+                    Unique-travel
+                  </p>
+                </div>
+              </a>
+              <div className={classes.projectInfoBox}>
+                <p>
                   Travel company website.
                   <br />
                   Fully responsive with a few DOM manipulating featuers.
@@ -33,12 +63,33 @@ const Projects = () => {
               </div>
             </div>
             <div className={classes.projectBox}>
-              <div className={classes.offerImgVeggie}>
-                <a href="./Projects">Veggie</a>
-              </div>
-              <div>
+              <a href="https://infallible-saha-152a89.netlify.app/">
+                <div
+                  className={`${
+                    onHoverVeggie
+                      ? [classes.offerImgVeggie, classes.activeVeggie].join(" ")
+                      : classes.offerImgVeggie
+                  }`}
+                  onMouseOver={() => setOnHoverVeggie(!onHoverVeggie)}
+                  onMouseOut={() => {
+                    setOnHoverVeggie(false);
+                  }}
+                >
+                  <p
+                    className={`${
+                      onHoverVeggie
+                        ? [classes.projectName, classes.activeProjectName].join(
+                            " "
+                          )
+                        : classes.projectName
+                    }`}
+                  >
+                    Veggie
+                  </p>
+                </div>
+              </a>
+              <div className={classes.projectInfoBox}>
                 <p>
-                  {" "}
                   Demo food ordering ReactJs App.
                   <br />I used plenty of React Hooks to build this app.
                 </p>

@@ -1,0 +1,18 @@
+.iconBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconBox img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=IconsBox.module.css.map */

@@ -1,6 +1,5 @@
 .projectSection {
-  height: 85vh;
-  width: 80vw;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +21,7 @@
 
 .projectSection article {
   font-family: Poppins, sans-serif, Helvetica;
-  margin: 0 auto;
+  margin: 0 2rem;
   padding: 1rem;
   font-weight: 300;
 }
@@ -84,26 +83,36 @@
   margin: 3rem auto 2rem auto;
 }
 
-.offerImgVeggie a {
-  font-size: 1.2rem;
-  color: white;
+.projectBox {
   text-decoration: none;
 }
 
-.sideProjects p {
+.projectName {
+  font-family: Poppins, sans-serif, Helvetica;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+
+.projectname:visited {
+  color: red;
+}
+
+.projectInfoBox {
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .projectSection {
-    height: 90vh;
+    height: auto;
   }
   .projectSection h2 {
     font-size: 1.7rem;
     margin: 4rem auto auto auto;
   }
-  .projectSection p {
-    margin: 0 auto 0.5rem auto;
+  .projectSection article {
+    font-size: 0.8rem;
+    margin: 0 1rem;
   }
   .offerImgUnique {
     width: 200px;
@@ -116,6 +125,7 @@
 @media (min-width: 600px) {
   .sideProjects {
     width: 50%;
+    min-width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,17 +135,26 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    text-align: center;
   }
-  .sideProjects p {
-    width: 90%;
+  .sideProjects .projectInfoBox {
     display: block;
     font-size: 0.8rem;
+    margin: 1rem auto;
     font-family: Poppins, sans-serif, Helvetica;
     font-style: italic;
+    font-weight: 200;
+    text-align: center;
   }
-  .projectBox {
-    width: 140px;
-    height: 13rem;
+  .projectName a {
+    text-decoration: none;
+  }
+  .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 17rem;
+    width: 80%;
   }
   .infoBox {
     margin: 0;
@@ -150,6 +169,7 @@
   .infoBox article {
     margin: 0 2rem 0 0;
     padding: 0;
+    min-width: 250px;
   }
   .infoBox .spanLine {
     margin: 1rem 0 1rem 0;
@@ -168,16 +188,22 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .projectSection p {
-    padding-top: 1rem;
-    margin: 0 2rem 1rem 0;
+  .projectBox {
+    width: 140px;
+    height: 13rem;
   }
-  .mainBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 17rem;
-    width: 80%;
+  .projectInfoBox {
+    margin-top: 1rem;
+  }
+  .projectInfoBox p {
+    margin: 0 auto;
+  }
+  .projectName {
+    color: white;
+    margin: 0 auto;
+  }
+  .projectName p {
+    font-size: 10rem;
   }
   .offerImgUnique {
     width: 140px;
@@ -196,10 +222,6 @@
     height: 35vh;
     text-align: left;
   }
-  .projectSection p {
-    padding: 0;
-    margin: 0 2rem 2.5rem 0;
-  }
   .projectSection h2 {
     margin: 0;
     font-size: 2rem;
@@ -213,6 +235,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 3rem;
   }
   .infoBox {
     width: 50%;
@@ -221,8 +244,12 @@
   }
   .infoBox article {
     margin: 0 8rem 0 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     min-width: 18rem;
+  }
+  .infoBox article p {
+    padding: 0;
+    margin: 0 2rem 2.5rem 0;
   }
   .infoBox .spanLine {
     margin: 1rem 0 1rem 0;
@@ -244,11 +271,111 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .sideProjects p {
+  .projectInfoBox p {
     font-family: Poppins, sans-serif, Helvetica;
     font-size: 1rem;
     font-weight: 100;
-    margin: 2rem 0 1rem 0.4rem;
+    margin-top: 2rem;
+  }
+  .activeVeggie {
+    -webkit-animation: myAnimation 0.3s;
+            animation: myAnimation 0.3s;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/veggie.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/veggie.png");
+  }
+  .activeUniqueTravel {
+    -webkit-animation: UniqueTravelAnimation 0.3s;
+            animation: UniqueTravelAnimation 0.3s;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/Unique-travel.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/Unique-travel.png");
+  }
+  @-webkit-keyframes myAnimation {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/veggie.png");
+    }
+    25% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/veggie.png");
+    }
+    50% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url("../../images/veggie.png");
+    }
+    75% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../images/veggie.png");
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/veggie.png");
+    }
+  }
+  @keyframes myAnimation {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/veggie.png");
+    }
+    25% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/veggie.png");
+    }
+    50% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url("../../images/veggie.png");
+    }
+    75% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../images/veggie.png");
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/veggie.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/veggie.png");
+    }
+  }
+  @-webkit-keyframes UniqueTravelAnimation {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/Unique-travel.png");
+    }
+    25% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/Unique-travel.png");
+    }
+    50% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url("../../images/Unique-travel.png");
+    }
+    75% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../images/Unique-travel.png");
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/Unique-travel.png");
+    }
+  }
+  @keyframes UniqueTravelAnimation {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/Unique-travel.png");
+    }
+    25% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/Unique-travel.png");
+    }
+    50% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url("../../images/Unique-travel.png");
+    }
+    75% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../images/Unique-travel.png");
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/Unique-travel.png");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/Unique-travel.png");
+    }
   }
   .offerImgUnique {
     width: 180px;

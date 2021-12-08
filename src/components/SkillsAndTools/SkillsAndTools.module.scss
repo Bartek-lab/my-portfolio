@@ -14,7 +14,7 @@
     padding-top: 2rem;
   }
   article {
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
     padding: 1rem;
     font-family: $font-family;
     font-weight: 300;
@@ -23,6 +23,7 @@
     font-family: $font-family;
     font-weight: 300;
     width: 90%;
+    margin: auto;
   }
   .spanLine {
     position: relative;
@@ -37,21 +38,26 @@
 
 @media (max-width: $breakpoint-smallPhone) {
   .skillsSection {
-    height: 65vh;
-
+    height: auto;
+    .skillsText {
+      margin: 1rem 1rem;
+    }
     h2 {
       margin-top: 2rem;
       font-size: 1.7rem;
     }
     article {
-      margin: 1rem auto auto auto;
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.8rem;
     }
   }
 }
 @media (min-width: $breakpoint-tablet) {
   .skillsSection {
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     margin: auto;
     display: flex;
     text-align: left;
@@ -68,14 +74,20 @@
       text-align: left;
       height: 13rem;
       max-height: 13rem;
-    }
-    h2 {
-      margin: 0;
-      padding: 0;
-    }
-    article {
-      margin: 0 2rem 0 0;
-      padding: 0;
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      article {
+        margin: 0 2rem 0 0;
+        padding: 0;
+        font-size: 1rem;
+        min-width: 250px;
+      }
+      p {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+      }
     }
 
     .spanLine {
@@ -84,6 +96,7 @@
   }
   .infoTools {
     width: 50%;
+    min-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -96,9 +109,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+
     .mainBox {
       display: flex;
-
+      margin-top: 4rem;
       height: auto;
       width: 65%;
     }
@@ -114,9 +128,6 @@
         margin: 0 8rem 0 0;
         min-width: 18rem;
         font-size: 1.2rem;
-      }
-      p {
-        margin: 0;
       }
     }
 

@@ -1,11 +1,11 @@
 .cooperateInfoBox p {
   font-family: Poppins, sans-serif, Helvetica;
-  font-weight: 300;
+  font-weight: 200;
   margin: 1rem 1.5rem 0 1.5rem;
 }
 
 .cooperateInfoBox h3 {
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
 .mainBox {
@@ -13,10 +13,24 @@
   width: 80%;
   margin: auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .cooperateInfoBox p {
+    font-size: 0.8rem;
     margin: 1rem auto 0 auto;
   }
 }
@@ -24,6 +38,7 @@
 @media (min-width: 600px) {
   .cooperateInfoBox {
     max-height: 200px;
+    margin: 0;
   }
   .cooperateInfoBox h3 {
     text-align: left;
@@ -32,28 +47,33 @@
     text-align: left;
     margin: 1rem 0 0 0;
   }
+  .cooperateInfoBox .mainBox {
+    display: block;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 600px) and (min-width: 992px) {
   .cooperateInfoBox {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 400px;
+    height: 28vh;
+  }
+  .cooperateInfoBox h3 {
+    margin: 1rem 0;
+  }
+  .cooperateInfoBox p {
+    margin: 2rem 0 2rem 0;
   }
   .mainBox {
     width: 65%;
     max-width: 1200px;
     margin: auto;
     text-align: left;
-  }
-  .mainBox p {
-    margin: 1rem 0 2rem 0;
-    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=CooperateInfoBox.module.css.map */

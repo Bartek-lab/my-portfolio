@@ -34,7 +34,7 @@
   font-size: 0.8rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .skillsBox {
     width: 140px;
     height: 11rem;

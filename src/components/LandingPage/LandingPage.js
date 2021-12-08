@@ -27,7 +27,6 @@ const LandingPage = () => {
           </article>
           <div className={classes.buttonBox}>
             <button className={classes.mainButton}>
-              {" "}
               <Link to="AboutMe" smooth={true} duration={300}>
                 About me
               </Link>

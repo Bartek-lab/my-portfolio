@@ -2,8 +2,7 @@ import React from "react";
 import classes from "./AboutMe.module.css";
 import imageDesktop from "../../images/aboutMe_page_desktop.png";
 import imageMobile from "../../images/aboutMe_page_mobile.png";
-import LinkedinIcon from "../../images/linkedin.png";
-import GitHubIcon from "../../images/github-logo.png";
+import IconsBox from "../IconsBox/IconsBox";
 
 const AboutMe = React.forwardRef((props, ref) => {
   return (
@@ -20,15 +19,12 @@ const AboutMe = React.forwardRef((props, ref) => {
           <article className={classes.aboutMeText}>
             Hi 🖖
             <br />
-            Hi I'm Bartek, My journey with web development has started in last
-            days of 2020, because I decided to change proffesion and dive into a
-            web development. Since that time I spend many hours to improve my
+            I'm Bartek, my journey with web development has started in last days
+            of 2020, because I decided to change proffesion and dive into a web
+            development. Since that time I spend many hours to improve my
             skills,and it brings me a lot of satisfaction.
           </article>
-          <div className={classes.iconsBox}>
-            <img src={GitHubIcon} alt="github_profile"></img>
-            <img src={LinkedinIcon} alt="linkedin_profile"></img>
-          </div>
+          <IconsBox />
         </div>
         <div className={classes.imageBox}>
           <img

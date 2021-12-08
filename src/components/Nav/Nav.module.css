@@ -7,7 +7,7 @@
 }
 
 .menu {
-  background: #4e4e6e;
+  background: #fdb550;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,9 +16,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
   height: 100vh;
   z-index: 15;
@@ -30,7 +27,20 @@
 
 .menu ul {
   list-style: none;
-  margin-top: 3rem;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -45,21 +55,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
   margin: 4rem auto 0 auto;
-  width: 40%;
+  width: 100%;
+  font-size: 1.4rem;
 }
 
-.menu ul li p {
-  font-size: 1.5rem;
-  color: #fec14f;
-  margin-right: 1rem;
+.menu ul a {
+  width: 70%;
 }
 
-.menu ul li a {
-  font-size: 1.5rem;
-  color: #fec14f;
-  margin: 0;
+.menu ul p {
+  margin: 0 2rem;
+}
+
+.menu .iconsMobileMenu {
+  width: 50%;
+  margin: auto;
+}
+
+.menu .iconsMobileMenu img {
+  margin: 2rem;
+}
+
+.menu .navItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  width: 80%;
 }
 
 .menu .menuIcon {
@@ -80,23 +110,7 @@
   z-index: 99999;
 }
 
-.iconBox {
-  height: 60px;
-  width: 70%;
-  margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.iconBox img {
-  width: 60px;
-  height: 60px;
-}
-
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .iconBox {
     margin: 0;
   }
@@ -111,6 +125,23 @@
   }
   .hamburgerBox {
     display: none;
+  }
+  nav {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu {
     position: fixed;
@@ -128,19 +159,20 @@
     background: #fdb550;
   }
   .menu ul {
-    margin: auto;
+    height: 100%;
   }
   .menu ul li {
-    margin: 3rem auto 3rem auto;
+    width: 2rem;
+    margin: 0.5rem auto;
   }
   .menu ul li p {
-    width: 200px;
+    margin: 1rem 0;
     color: black;
     font-size: 1.6rem;
     z-index: 9999;
   }
-  .menu ul li a {
-    width: 2rem;
+  .navItem {
+    width: 10px;
   }
   .menu::after {
     content: "";
@@ -166,9 +198,6 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .iconBox {
-    display: none;
-  }
 }
 
 @media (min-width: 992px) {
@@ -178,31 +207,6 @@
   }
   .menu {
     height: 60%;
-  }
-  nav {
-    width: 100%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  nav p {
-    text-decoration: none;
-    color: black;
-    font-family: Poppins, sans-serif, Helvetica;
-    font-size: 1rem;
-    margin: auto;
-    cursor: pointer;
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

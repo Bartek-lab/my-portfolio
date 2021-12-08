@@ -20,7 +20,7 @@
 }
 
 .infoBox {
-  margin: 9rem 5rem 0rem 5rem;
+  margin: 7rem 5rem 0rem 5rem;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@
 
 .mainText {
   margin: 2rem 0 2rem 0;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 100;
 }
 
@@ -71,12 +71,18 @@
   color: #fec14f;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .infoBox {
-    margin: 35% 2rem 0 2rem;
+    margin: 25% 2rem 0 2rem;
+  }
+  .mainText {
+    font-size: 1rem;
   }
   .landingImage .landingImageMobile {
     width: 70%;
+  }
+  .mainButton {
+    width: 11rem;
   }
 }
 
@@ -165,19 +171,19 @@
     width: 50%;
   }
   .title {
-    margin-right: 4rem;
+    margin-right: 3rem;
     font-size: 3rem;
     width: 16rem;
   }
   .mainText {
-    margin: 2rem 4rem 1rem 0;
+    margin: 2rem 3rem 1rem 0;
     height: 6rem;
     width: 16rem;
     font-size: 1.4rem;
   }
   .mainButton {
     font-size: 1.5rem;
-    margin: 2rem 4rem 0 0;
+    margin: 2rem 3rem 0 0;
     width: 16rem;
   }
   .landingImage {

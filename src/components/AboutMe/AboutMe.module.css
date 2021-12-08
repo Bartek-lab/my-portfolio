@@ -50,44 +50,40 @@
 
 .aboutMeInfo {
   padding: 0 3.5rem 0 3.5rem;
-  margin-top: 12rem;
+  margin-top: 13rem;
   line-height: 1.3rem;
   font-family: Poppins, sans-serif, Helvetica;
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 1.1rem;
   text-align: center;
+}
+
+.aboutMeInfo img {
+  margin-top: 4rem;
 }
 
 .aboutMeText {
   position: relative;
 }
 
-.iconsBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.iconsBox img {
-  height: 3rem;
-  width: 3rem;
-  margin: 2.5rem;
-}
-
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .aboutMeSection {
     min-height: 600px;
   }
+  .aboutMeImageMobile {
+    width: 13rem;
+    height: 13rem;
+  }
   .aboutMeInfo {
-    margin-top: 11rem;
+    margin-top: 10rem;
+    font-size: 0.8rem;
+  }
+  .aboutMeInfo img {
+    margin-top: 3rem;
   }
   .backgroundBox h2 {
-    font-size: 2rem;
-    padding-top: 3rem;
+    font-size: 1.8rem;
+    padding-top: 2rem;
   }
 }
 
@@ -97,7 +93,10 @@
     max-height: 800px;
   }
   .aboutMeSection h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .aboutMeText {
+    font-size: 1rem;
   }
   .backgroundBox {
     display: -webkit-box;
@@ -124,7 +123,7 @@
     height: 100%;
   }
   .imageBox {
-    width: 50%;
+    width: 45%;
     height: 40vh;
   }
   .imageBox .aboutMeImageMobile {
@@ -140,7 +139,7 @@
   }
   .titleBox {
     height: auto;
-    margin: 7rem 0 0 0;
+    margin: 6rem 0 0 0;
   }
   .titleBox h2 {
     padding: 0;
@@ -166,14 +165,8 @@
     min-width: 200px;
     margin: 1rem 1rem 0 0;
   }
-  .iconsBox {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin: 2.5rem 0 0 0;
-  }
-  .iconsBox img {
-    margin: 0 2.5rem 0 0;
+  .aboutMeInfo img {
+    margin: 2rem 2rem 0 0;
   }
 }
 
@@ -194,16 +187,20 @@
   .mainBox {
     width: 65%;
   }
+  .aboutMeText {
+    font-size: 1.1rem;
+  }
   .emptyBox {
     width: 17.5%;
     height: 100%;
   }
   .imageBox {
-    width: 40%;
+    width: 50%;
     height: 45vh;
   }
   .imageBox .aboutMeImageDesktop {
-    top: 20%;
+    top: 18%;
+    right: 22%;
     width: 350px;
     height: 350px;
   }
@@ -215,7 +212,6 @@
     padding: 0 4rem 0 0;
     width: 50%;
     margin: 1rem 1rem 0 0rem;
-    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=AboutMe.module.css.map */

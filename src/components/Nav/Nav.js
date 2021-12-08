@@ -1,9 +1,9 @@
+import { useMediaQuery } from "react-responsive";
 import classes from "./Nav.module.css";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Squash as Hamburger } from "hamburger-react";
-import LinkedinIcon from "../../images/linkedin.png";
-import GitHubIcon from "../../images/github-logo.png";
+import IconsBox from "../IconsBox/IconsBox";
 import {
   FaHome,
   FaIdCard,
@@ -13,32 +13,36 @@ import {
 } from "react-icons/fa";
 
 const Nav = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpenMenu, setOpenMenu] = useState(false);
 
+  const isTabletScreen = useMediaQuery({ query: "(min-width: 600px)" });
+  const handleToggle = () => {
+    setOpenMenu(!isOpenMenu);
+  };
   return (
     <div className={classes.header}>
       <div className={classes.navBox}>
         <div className={classes.hamburgerBox}>
           <Hamburger
             size={40}
-            color={`${isOpen ? "#FEC14F" : "#58595B"}`}
-            toggled={isOpen}
-            toggle={setOpen}
+            color={`${isOpenMenu ? "black" : "#58595B"}`}
+            toggled={isOpenMenu}
+            toggle={setOpenMenu}
           />
         </div>
       </div>
       <nav
         className={`${
-          isOpen ? [classes.menu, classes.active].join(" ") : classes.menu
+          isOpenMenu ? [classes.menu, classes.active].join(" ") : classes.menu
         }`}
         onClick={() => {
-          setOpen(!isOpen);
+          setOpenMenu(!isOpenMenu);
         }}
         onMouseOver={() => {
-          setOpen(true);
+          handleToggle();
         }}
         onMouseOut={() => {
-          setOpen(false);
+          setOpenMenu(false);
         }}
       >
         <ul>
@@ -48,13 +52,15 @@ const Nav = () => {
               smooth={true}
               duration={300}
               onClick={() => {
-                setOpen(false);
+                setOpenMenu(false);
               }}
             >
-              <p>
-                <FaHome />
-              </p>
-              <div className={classes.linkName}> Home</div>
+              <div className={classes.navItem}>
+                <p>
+                  <FaHome />
+                </p>
+                <div className={classes.linkName}> Home</div>
+              </div>
             </Link>
           </li>
           <li>
@@ -63,13 +69,15 @@ const Nav = () => {
               smooth={true}
               duration={300}
               onClick={() => {
-                setOpen(false);
+                setOpenMenu(false);
               }}
             >
-              <p>
-                <FaIdCard />
-              </p>
-              <div className={classes.linkName}> About me</div>
+              <div className={classes.navItem}>
+                <p>
+                  <FaIdCard />
+                </p>
+                <div className={classes.linkName}> About me</div>
+              </div>
             </Link>
           </li>
           <li>
@@ -78,13 +86,15 @@ const Nav = () => {
               smooth={true}
               duration={400}
               onClick={() => {
-                setOpen(false);
+                setOpenMenu(false);
               }}
             >
-              <p>
-                <FaTools />
-              </p>
-              <div className={classes.linkName}> SkillsAndTools</div>
+              <div className={classes.navItem}>
+                <p>
+                  <FaTools />
+                </p>
+                <div className={classes.linkName}> SkillsAndTools</div>
+              </div>
             </Link>
           </li>
           <li>
@@ -93,13 +103,15 @@ const Nav = () => {
               smooth={true}
               duration={500}
               onClick={() => {
-                setOpen(false);
+                setOpenMenu(false);
               }}
             >
-              <p>
-                <FaKeyboard />
-              </p>
-              <div className={classes.linkName}> Projects</div>
+              <div className={classes.navItem}>
+                <p>
+                  <FaKeyboard />
+                </p>
+                <div className={classes.linkName}> Projects</div>
+              </div>
             </Link>
           </li>
           <li>
@@ -108,19 +120,20 @@ const Nav = () => {
               smooth={true}
               duration={600}
               onClick={() => {
-                setOpen(false);
+                setOpenMenu(false);
               }}
             >
-              <p>
-                <FaComment />
-              </p>
-              <div className={classes.linkName}> Contact Me</div>
+              <div className={classes.navItem}>
+                <p>
+                  <FaComment />
+                </p>
+                <div className={classes.linkName}> Contact Me</div>
+              </div>
             </Link>
           </li>
         </ul>
-        <div className={classes.iconBox}>
-          <img src={GitHubIcon} alt="github_profile"></img>
-          <img src={LinkedinIcon} alt="linkedin_profile"></img>
+        <div className={classes.iconsMobileMenu}>
+          {!isTabletScreen && <IconsBox />}
         </div>
       </nav>
     </div>

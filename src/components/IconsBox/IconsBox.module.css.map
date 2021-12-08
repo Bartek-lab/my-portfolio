@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EAEb,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;CAOpB;;AAZD,AAOE,QAPM,CAON,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;CAChB",
+    "sources": [
+        "IconsBox.module.scss",
+        "../../SCSS/_mediaQueries.scss",
+        "../../SCSS/_variables.scss"
+    ],
+    "names": [],
+    "file": "IconsBox.module.css"
+}
