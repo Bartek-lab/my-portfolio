@@ -13,7 +13,7 @@
 .mainBox {
   height: 20vh;
   width: 80%;
-  margin: auto;
+  margin: 2rem auto 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,8 @@
 }
 @media (min-width: $breakpoint-tablet) {
   .cooperateInfoBox {
-    max-height: 200px;
+    max-height: 180px;
+    height: 15vh;
     margin: 0;
     h3 {
       text-align: left;
@@ -42,6 +43,7 @@
     }
     .mainBox {
       display: block;
+      min-width: 600px;
     }
   }
 
@@ -55,7 +57,7 @@
       }
 
       p {
-        margin: 2rem 0 2rem 0;
+        margin: 1rem 0 2rem 0;
       }
     }
     .mainBox {
@@ -64,6 +66,17 @@
       margin: auto;
       text-align: left;
       align-items: flex-start;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-bigScreen) {
+  .cooperateInfoBox {
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.4rem;
     }
   }
 }

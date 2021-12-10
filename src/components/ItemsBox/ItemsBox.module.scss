@@ -52,7 +52,6 @@
 
 @media (min-width: $breakpoint-smallDesktop) {
   .skillsBox {
-    font-size: 1rem;
     width: 180px;
     height: 270px;
     .image {
@@ -64,3 +63,50 @@
     }
   }
 }
+@media (min-width: $breakpoint-bigScreen) {
+  .skillsBox {
+    font-size: 1.4rem;
+    width: 220px;
+    height: 300px;
+    .image {
+      width: 45px;
+      height: 45px;
+    }
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+// .projectSection {
+//   height: 45vh;
+//   h2 {
+//     font-size: 2.7rem;
+//   }
+//   .infoBox {
+//     height: 400px;
+//     max-height: 500px;
+//     article {
+//       font-size: 1.4rem;
+//     }
+//   }
+// }
+// .projectName {
+//   font-size: 1.4rem;
+// }
+// .projectInfoBox {
+//   p {
+//     font-size: 1.2rem;
+//   }
+// }
+// .projectBox {
+//   width: 220px;
+//   height: 400px;
+// }
+// .offerImgUnique {
+//   width: 220px;
+//   height: 90px;
+// }
+// .offerImgVeggie {
+//   width: 220px;
+//   height: 90px;
+// }

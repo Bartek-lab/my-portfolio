@@ -26,6 +26,16 @@
   font-weight: 300;
 }
 
+.navLink {
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .spanLine {
   position: relative;
   display: -webkit-box;
@@ -51,10 +61,11 @@
   height: 90px;
   width: 237px;
   background-repeat: no-repeat;
+  background-position: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../../images/Unique-travel.png");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../images/Unique-travel.png");
   margin: 3rem auto 2rem auto;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .offerImgUnique a {
@@ -76,10 +87,11 @@
   height: 90px;
   width: 237px;
   background-repeat: no-repeat;
+  background-position: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url("../../images/veggie.png");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../images/veggie.png");
   background-position: right;
-  border-radius: 20px;
+  border-radius: 15px;
   margin: 3rem auto 2rem auto;
 }
 
@@ -155,6 +167,7 @@
     display: flex;
     height: 17rem;
     width: 80%;
+    min-width: 600px;
   }
   .infoBox {
     margin: 0;
@@ -246,10 +259,6 @@
     margin: 0 8rem 0 0;
     font-size: 1.1rem;
     min-width: 18rem;
-  }
-  .infoBox article p {
-    padding: 0;
-    margin: 0 2rem 2.5rem 0;
   }
   .infoBox .spanLine {
     margin: 1rem 0 1rem 0;
@@ -386,6 +395,40 @@
     width: 180px;
     height: 70px;
     margin: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .projectSection {
+    height: 45vh;
+  }
+  .projectSection h2 {
+    font-size: 2.7rem;
+  }
+  .projectSection .infoBox {
+    height: 400px;
+    max-height: 500px;
+  }
+  .projectSection .infoBox article {
+    font-size: 1.4rem;
+  }
+  .projectName {
+    font-size: 1.4rem;
+  }
+  .projectInfoBox p {
+    font-size: 1.2rem;
+  }
+  .projectBox {
+    width: 220px;
+    height: 400px;
+  }
+  .offerImgUnique {
+    width: 220px;
+    height: 90px;
+  }
+  .offerImgVeggie {
+    width: 220px;
+    height: 90px;
   }
 }
 /*# sourceMappingURL=Projects.module.css.map */

@@ -23,7 +23,7 @@
     font-family: $font-family;
     font-weight: 300;
     width: 90%;
-    margin: auto;
+    margin: auto auto 2rem auto;
   }
   .spanLine {
     position: relative;
@@ -67,6 +67,7 @@
       display: flex;
       height: 17rem;
       width: 80%;
+      min-width: 600px;
     }
     .skillsText {
       margin: 0;
@@ -93,6 +94,9 @@
     .spanLine {
       margin: 1rem 0 1rem 0;
     }
+  }
+  .additionalMessage {
+    padding-right: 5rem;
   }
   .infoTools {
     width: 50%;
@@ -137,5 +141,22 @@
   }
   .infoTools {
     min-width: 380px;
+  }
+}
+
+@media (min-width: $breakpoint-bigScreen) {
+  .skillsSection {
+    height: 45vh;
+    .skillsText {
+      h2 {
+        font-size: 2.7rem;
+      }
+      article {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

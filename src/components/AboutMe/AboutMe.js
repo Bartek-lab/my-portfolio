@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./AboutMe.module.css";
-import imageDesktop from "../../images/aboutMe_page_desktop.png";
-import imageMobile from "../../images/aboutMe_page_mobile.png";
+import imageDesktop from "../../images/aboutMe_image_desktop.png";
+import imageMobile from "../../images/aboutMe_image_mobile.png";
 import IconsBox from "../IconsBox/IconsBox";
 
 const AboutMe = React.forwardRef((props, ref) => {
@@ -19,10 +19,10 @@ const AboutMe = React.forwardRef((props, ref) => {
           <article className={classes.aboutMeText}>
             Hi 🖖
             <br />
-            I'm Bartek, my journey with web development has started in last days
-            of 2020, because I decided to change proffesion and dive into a web
-            development. Since that time I spend many hours to improve my
-            skills,and it brings me a lot of satisfaction.
+            I'm Bartek, my journey with web development has started back in last
+            days of 2020, when I decided to do first courses and read other
+            online sources. After that year I learned banch of technologies,
+            which allowed me moving in front-end environment.
           </article>
           <IconsBox />
         </div>

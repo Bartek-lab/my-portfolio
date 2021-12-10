@@ -31,12 +31,10 @@ const SkillsAndTools = (props) => {
           <article>
             I’m always trying to write clean code, with high performence
             effects.
-            <br />
-            Every time I'm looking for the best solution for a specific problem.
-            <br />
-            If you have any tasks for me, just send me a DM.
+            <br />I am constantly learning new technologies and tools to be able
+            to choose the right ones for a specific task.
           </article>
-          <p>
+          <p className={classes.additionalMessage}>
             💭 I trully fell in love with ReactJs, but I'm not scared of tasks
             in VanillaJs or clean CSS as well.
           </p>

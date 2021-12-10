@@ -130,9 +130,6 @@
       }
     }
   }
-  .navItem {
-    width: 10px;
-  }
 
   .menu::after {
     content: "";
@@ -167,5 +164,18 @@
   }
   .menu {
     height: 60%;
+    ul {
+      li {
+        margin: 1.3rem 0;
+      }
+    }
+  }
+  .navItem:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: $breakpoint-bigScreen) {
+  .menu {
   }
 }

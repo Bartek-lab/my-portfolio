@@ -39,7 +39,7 @@
   color: #fdb550;
   font-weight: 400;
   font-size: 1.2rem;
-  margin: 1.5rem 0 1rem 0;
+  margin: 1rem;
   border: 2px solid #fdb550;
   border-radius: 30px;
   width: 12rem;
@@ -65,12 +65,12 @@
 }
 
 .mainTextInput {
-  height: 60%;
+  height: 50%;
   width: 85%;
+  margin: 0.3rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 1rem;
   background-color: #d4d4d4;
   border-style: none;
 }
@@ -146,7 +146,7 @@
     max-height: 500px;
     min-height: 300px;
     position: absolute;
-    bottom: 30%;
+    bottom: 28%;
   }
   .contactForm button {
     margin-top: 0.5rem;
@@ -165,9 +165,6 @@
   .footerInfoBox img {
     margin: 1rem 0;
   }
-  .mainTextInput {
-    margin: 0;
-  }
 }
 
 @media (min-width: 992px) {
@@ -178,7 +175,8 @@
   .contactForm {
     height: 55vh;
     max-height: 400px;
-    bottom: 25%;
+    max-width: 1250px;
+    bottom: 28%;
   }
   .footer {
     height: 45%;

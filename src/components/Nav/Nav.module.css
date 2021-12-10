@@ -171,9 +171,6 @@
     font-size: 1.6rem;
     z-index: 9999;
   }
-  .navItem {
-    width: 10px;
-  }
   .menu::after {
     content: "";
     background-image: url(../../images/open-menu.png);
@@ -207,6 +204,13 @@
   }
   .menu {
     height: 60%;
+  }
+  .menu ul li {
+    margin: 1.3rem 0;
+  }
+  .navItem:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

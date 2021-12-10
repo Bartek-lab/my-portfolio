@@ -99,6 +99,7 @@
   .mainBox {
     margin-top: 3rem;
     width: 80%;
+    min-width: 600px;
     height: 25vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,26 +169,27 @@
     padding: 0;
     max-height: 35vh;
     margin-top: 1.5rem;
-    width: 50%;
+    width: 52%;
   }
   .title {
-    margin-right: 3rem;
+    margin-right: 4rem;
     font-size: 3rem;
     width: 16rem;
   }
   .mainText {
-    margin: 2rem 3rem 1rem 0;
+    margin: 2rem 4rem 0 0;
     height: 6rem;
     width: 16rem;
     font-size: 1.4rem;
   }
   .mainButton {
     font-size: 1.5rem;
-    margin: 2rem 3rem 0 0;
+    margin: 2rem 4rem 0 0;
     width: 16rem;
+    cursor: pointer;
   }
   .landingImage {
-    width: 50%;
+    width: 48%;
     margin-top: 1rem;
   }
   .landingImage .landingImageMobile {
@@ -198,6 +200,31 @@
     height: 284px;
     width: 378px;
     margin-left: -2rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .infoBox {
+    max-width: 50rem;
+    width: 50%;
+  }
+  .landingImage .landingImageDesktop {
+    display: block;
+    height: 384px;
+    width: 478px;
+    margin-left: -2rem;
+  }
+  .mainButton {
+    margin: 5rem 3rem 0 0;
+    width: 18rem;
+    height: 4rem;
+  }
+  .mainText {
+    margin: 2rem 4rem 2rem 0;
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=LandingPage.module.css.map */

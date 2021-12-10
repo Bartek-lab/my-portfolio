@@ -26,11 +26,9 @@ const LandingPage = () => {
             <br /> Let's talk what we can do together...
           </article>
           <div className={classes.buttonBox}>
-            <button className={classes.mainButton}>
-              <Link to="AboutMe" smooth={true} duration={300}>
-                About me
-              </Link>
-            </button>
+            <Link to="AboutMe" smooth={true} duration={300}>
+              <button className={classes.mainButton}> About me</button>
+            </Link>
           </div>
         </div>
       </div>
