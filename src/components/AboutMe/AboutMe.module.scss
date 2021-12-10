@@ -202,6 +202,8 @@
 
 @media (min-width: $breakpoint-bigScreen) {
   .aboutMeSection {
+    max-width: 2100px;
+    margin: auto;
     article {
       font-size: 1.4rem;
       line-height: 1.6rem;

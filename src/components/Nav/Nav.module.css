@@ -206,7 +206,7 @@
     height: 60%;
   }
   .menu ul li {
-    margin: 1.3rem 0;
+    margin: 0.8rem 0;
   }
   .navItem:hover {
     -webkit-transform: scale(1.2);

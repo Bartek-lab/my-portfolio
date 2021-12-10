@@ -19,10 +19,12 @@ const AboutMe = React.forwardRef((props, ref) => {
           <article className={classes.aboutMeText}>
             Hi 🖖
             <br />
-            I'm Bartek, my journey with web development has started back in last
-            days of 2020, when I decided to do first courses and read other
-            online sources. After that year I learned banch of technologies,
-            which allowed me moving in front-end environment.
+            I'm Bartek, my journey with web development has started in last days
+            of 2020, when I started doing research and realized that it can be a
+            good direction for my self-development. Then I decided to do first
+            courses and research other online sources. After this year I've
+            learned number of technologies, which allowed me to navigate in
+            front-end environment.
           </article>
           <IconsBox />
         </div>

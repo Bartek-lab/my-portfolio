@@ -173,19 +173,23 @@
 }
 
 @media (min-width: $breakpoint-bigScreen) {
+  .mainBox {
+    max-width: 2100px;
+  }
   .title {
     font-size: 3.5rem;
   }
   .infoBox {
-    max-width: 50rem;
+    // max-width: 50rem;
     width: 50%;
   }
   .landingImage {
+    width: 30%;
     .landingImageDesktop {
       display: block;
       height: 384px;
       width: 478px;
-      margin-left: -2rem;
+      margin-left: rem;
     }
   }
 

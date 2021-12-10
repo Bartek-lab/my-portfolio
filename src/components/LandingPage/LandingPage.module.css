@@ -204,18 +204,23 @@
 }
 
 @media (min-width: 1700px) {
+  .mainBox {
+    max-width: 2100px;
+  }
   .title {
     font-size: 3.5rem;
   }
   .infoBox {
-    max-width: 50rem;
     width: 50%;
+  }
+  .landingImage {
+    width: 30%;
   }
   .landingImage .landingImageDesktop {
     display: block;
     height: 384px;
     width: 478px;
-    margin-left: -2rem;
+    margin-left: rem;
   }
   .mainButton {
     margin: 5rem 3rem 0 0;

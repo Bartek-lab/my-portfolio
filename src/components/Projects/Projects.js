@@ -14,7 +14,7 @@ const Projects = () => {
           <article>
             My projects are made from scratch.
             <br />
-            I focus on making scalable products with practice UX interfaces.
+            I focus on making scalable products with practical UX interfaces.
             <br />
             Every design has been made in Figma.
             <br />
