@@ -35,7 +35,27 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 640px) and (orientation: landscape) {
+  .cooperateInfoBox {
+    max-height: 180px;
+    height: 20vh;
+    margin: 0;
+  }
+  .cooperateInfoBox h3 {
+    text-align: left;
+  }
+  .cooperateInfoBox p {
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 1rem 0 0 0;
+  }
+  .cooperateInfoBox .mainBox {
+    display: block;
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
   .cooperateInfoBox {
     max-height: 180px;
     height: 15vh;
@@ -50,32 +70,34 @@
   }
   .cooperateInfoBox .mainBox {
     display: block;
-    min-width: 600px;
+    min-width: 580px;
+    width: 90%;
   }
 }
 
-@media (min-width: 600px) and (min-width: 992px) {
+@media (min-width: 600px) and (min-height: 400px) and (min-width: 992px) {
   .cooperateInfoBox {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 28vh;
+    height: 30vh;
   }
-  .cooperateInfoBox h3 {
-    margin: 1rem 0;
-  }
-  .cooperateInfoBox p {
-    margin: 1rem 0 2rem 0;
-  }
-  .mainBox {
+  .cooperateInfoBox .mainBox {
     width: 65%;
+    min-width: 700px;
     max-width: 1200px;
     margin: auto;
     text-align: left;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .cooperateInfoBox h3 {
+    margin: 1rem 0;
+  }
+  .cooperateInfoBox p {
+    margin: 1rem 0 2rem 0;
   }
 }
 

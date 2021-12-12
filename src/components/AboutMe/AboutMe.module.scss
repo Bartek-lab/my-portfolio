@@ -4,7 +4,8 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  min-height: 550px;
+  min-height: 650px;
+  min-width: 200px;
 }
 
 .backgroundBox {
@@ -52,10 +53,10 @@
   line-height: 1.3rem;
   font-family: $font-family;
   font-weight: 200;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: center;
   img {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 .aboutMeText {
@@ -84,54 +85,127 @@
     }
   }
 }
-
-@media (min-width: $breakpoint-tablet) {
+@media (min-device-width: 480px) and (max-device-height: 640px) and (orientation: landscape) {
   .aboutMeSection {
     height: 60vh;
     max-height: 800px;
-    h2 {
-      font-size: 2rem;
-    }
   }
 
   .aboutMeText {
-    font-size: 1rem;
-    min-width: 250px;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    min-width: 240px;
   }
   .backgroundBox {
+    height: 150px;
     display: flex;
     flex-direction: row;
   }
   .mainBox {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
-  .emptyBox {
-    width: 10%;
-    height: 100%;
-  }
+
   .imageBox {
-    width: 45%;
+    width: 40%;
     height: 40vh;
+    margin: auto;
     .aboutMeImageMobile {
       display: none;
     }
     .aboutMeImageDesktop {
       position: absolute;
       display: block;
-      top: 20%;
+      top: 100px;
+      width: 230px;
+      height: 230px;
+      border-radius: 1000px;
+    }
+  }
+  .titleBox {
+    height: 100%;
+    margin: auto;
+    width: 90%;
+
+    h2 {
+      font-size: 1.6rem;
+      padding: 0;
+      text-align: left;
+      margin-top: 90px;
+    }
+    .spanLine {
+      width: 3rem;
+      margin: 0.8rem 0 0 0;
+    }
+  }
+  .aboutMeInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem 0 0;
+    text-align: left;
+    width: 50%;
+    min-width: 200px;
+    margin: 1rem 1rem 0 0;
+    img {
+      margin: 2rem 2rem 0 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) and (min-height: 400px) {
+  .aboutMeSection {
+    height: 50vh;
+    max-height: 800px;
+  }
+
+  .aboutMeText {
+    font-size: 1rem;
+
+    min-width: 280px;
+  }
+  .backgroundBox {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainBox {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    min-width: 580px;
+  }
+
+  .imageBox {
+    width: 45%;
+    height: 40vh;
+    margin: auto;
+    .aboutMeImageMobile {
+      display: none;
+    }
+    .aboutMeImageDesktop {
+      position: absolute;
+      display: block;
+      top: 130px;
       width: 271px;
       height: 271px;
       border-radius: 1000px;
     }
   }
   .titleBox {
-    height: auto;
-    margin: 6rem 0 0 0;
+    height: 100%;
+    margin: auto;
+    width: 90%;
+    min-width: 580px;
     h2 {
+      font-size: 2rem;
       padding: 0;
+      text-align: left;
+      margin-top: 130px;
     }
     .spanLine {
       margin: 0.8rem 0 0 0;
@@ -159,39 +233,46 @@
 
     h2 {
       font-size: 2.2rem;
+      text-align: left;
+      margin-top: 12%;
     }
     article {
       padding-right: 2rem;
+      line-height: 1.2rem;
     }
   }
   .backgroundBox {
-    height: 20%;
-    min-height: 200px;
+    height: 220px;
   }
   .mainBox {
     width: 65%;
+    min-width: 700px;
   }
   .aboutMeText {
     font-size: 1.1rem;
+    line-height: 1rem;
   }
 
-  .emptyBox {
-    width: 17.5%;
-    height: 100%;
-  }
   .imageBox {
-    width: 38%;
     height: 45vh;
+
     .aboutMeImageDesktop {
-      top: 18%;
-      // right: 22%;
+      top: 140px;
       width: 350px;
       height: 350px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
   }
   .titleBox {
-    height: auto;
-    margin: 8rem 0 0 0;
+    min-width: 700px;
+    height: 100%;
+    width: 65%;
+    margin: auto;
+    h2 {
+      margin-top: 140px;
+    }
   }
   .aboutMeInfo {
     padding: 0 4rem 0 0;
@@ -202,15 +283,25 @@
 
 @media (min-width: $breakpoint-bigScreen) {
   .aboutMeSection {
-    max-width: 2100px;
     margin: auto;
+    height: 80vh;
     article {
       font-size: 1.4rem;
       line-height: 1.6rem;
     }
   }
+  .titleBox {
+    width: 65%;
+    max-width: 1500px;
+    margin: auto;
+  }
+  .emptyBox {
+    width: 0;
+  }
+  .mainBox {
+    max-width: 1500px;
+  }
   .imageBox {
-    width: 20%;
     .aboutMeImageDesktop {
       top: 12%;
       width: 450px;

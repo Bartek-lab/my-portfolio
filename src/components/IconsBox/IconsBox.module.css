@@ -15,4 +15,16 @@
   height: 30px;
   cursor: pointer;
 }
+
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+  .iconBox {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .iconBox img {
+    width: 20px;
+    height: 20px;
+  }
+}
 /*# sourceMappingURL=IconsBox.module.css.map */

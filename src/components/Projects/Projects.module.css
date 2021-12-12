@@ -1,5 +1,6 @@
 .projectSection {
   height: 80vh;
+  mmin-height: 568px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +135,103 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+  .projectSection {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sideProjects {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  .sideProjects .projectInfoBox {
+    display: block;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+    font-family: Poppins, sans-serif, Helvetica;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+  }
+  .projectName {
+    font-size: 1rem;
+  }
+  .projectName a {
+    text-decoration: none;
+  }
+  .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 17rem;
+    width: 90%;
+    min-width: 400px;
+  }
+  .infoBox {
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    height: 13rem;
+    max-height: 13rem;
+  }
+  .infoBox h2 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .infoBox article {
+    margin: 0;
+    padding: 0 1rem 0 0;
+    font-size: 0.9rem;
+  }
+  .infoBox .spanLine {
+    margin: 1rem 0 1rem 0;
+  }
+  .projectBox {
+    width: 140px;
+    height: 13rem;
+  }
+  .projectInfoBox {
+    margin-top: 1rem;
+  }
+  .projectInfoBox p {
+    margin: 0 auto;
+  }
+  .projectName {
+    color: white;
+    margin: 0 auto;
+  }
+  .offerImgUnique {
+    width: 120px;
+    height: 50px;
+    margin: auto;
+  }
+  .offerImgVeggie {
+    width: 120px;
+    height: 50px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
   .sideProjects {
     width: 50%;
     min-width: 300px;
@@ -166,8 +263,8 @@
     display: -ms-flexbox;
     display: flex;
     height: 17rem;
-    width: 80%;
-    min-width: 600px;
+    width: 90%;
+    min-width: 580px;
   }
   .infoBox {
     margin: 0;
@@ -202,7 +299,7 @@
             justify-content: center;
   }
   .projectBox {
-    width: 140px;
+    width: 130px;
     height: 13rem;
   }
   .projectInfoBox {
@@ -219,7 +316,7 @@
     font-size: 10rem;
   }
   .offerImgUnique {
-    width: 140px;
+    width: 130px;
     height: 70px;
     margin: 0;
   }
@@ -241,6 +338,7 @@
   }
   .mainBox {
     width: 65%;
+    min-width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,7 +346,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 3rem;
+    margin: 3rem 0 2rem 0;
   }
   .infoBox {
     width: 50%;
@@ -258,7 +356,6 @@
   .infoBox article {
     margin: 0 8rem 0 0;
     font-size: 1.1rem;
-    min-width: 18rem;
   }
   .infoBox .spanLine {
     margin: 1rem 0 1rem 0;
@@ -400,8 +497,7 @@
 
 @media (min-width: 1700px) {
   .projectSection {
-    height: 50vh;
-    max-width: 2100px;
+    height: 60vh;
   }
   .projectSection h2 {
     font-size: 2.7rem;
@@ -412,6 +508,9 @@
   }
   .projectSection .infoBox article {
     font-size: 1.4rem;
+  }
+  .mainBox {
+    max-width: 1500px;
   }
   .projectName {
     font-size: 1.4rem;

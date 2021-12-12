@@ -50,7 +50,29 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+  .skillsBox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 13rem;
+    margin: 0;
+    width: 120px;
+  }
+  .skillsBox li {
+    font-size: 0.7rem;
+  }
+  .skillsBox .image {
+    height: 30px;
+    margin: 0 0 1rem 0;
+    width: 30px;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
   .skillsBox {
     font-size: 0.8rem;
     width: 140px;

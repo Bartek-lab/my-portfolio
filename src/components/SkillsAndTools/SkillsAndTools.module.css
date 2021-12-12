@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
   .skillsSection {
     width: 100%;
     min-height: 400px;
@@ -81,8 +81,74 @@
     display: -ms-flexbox;
     display: flex;
     height: 17rem;
-    width: 80%;
-    min-width: 600px;
+    width: 90%;
+    min-width: 400px;
+  }
+  .skillsSection .skillsText {
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    height: 13rem;
+    max-height: 13rem;
+  }
+  .skillsSection .skillsText h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .skillsSection .skillsText article {
+    margin: 0 2rem 0 0;
+    padding: 0;
+    font-size: 0.9rem;
+    min-width: 250px;
+  }
+  .skillsSection .skillsText p {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .skillsSection .spanLine {
+    margin: 1rem 0 1rem 0;
+  }
+  .additionalMessage {
+    padding-right: 5rem;
+  }
+  .infoTools {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
+  .skillsSection {
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skillsSection .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 17rem;
+    width: 90%;
+    min-width: 580px;
   }
   .skillsSection .skillsText {
     margin: 0;
@@ -143,6 +209,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-top: 4rem;
+    min-width: 700px;
     height: auto;
     width: 65%;
   }
@@ -170,7 +237,6 @@
 @media (min-width: 1700px) {
   .skillsSection {
     height: 65vh;
-    max-width: 2100px;
   }
   .skillsSection .skillsText h2 {
     font-size: 2.7rem;
@@ -180,6 +246,9 @@
   }
   .skillsSection .skillsText p {
     font-size: 1.2rem;
+  }
+  .mainBox {
+    max-width: 1500px;
   }
 }
 /*# sourceMappingURL=SkillsAndTools.module.css.map */

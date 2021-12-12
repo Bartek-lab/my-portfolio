@@ -119,7 +119,24 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+  .menu ul {
+    margin-top: 3rem;
+  }
+  .menu ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  .menu .iconsMobileMenu {
+    width: 70%;
+  }
+  .menu .iconsMobileMenu a {
+    width: 0;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
   .header {
     height: 0vh;
   }

@@ -8,7 +8,6 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div className={classes.aboutMeSection} id="AboutMe">
       <div className={classes.backgroundBox} ref={ref}>
-        <div className={classes.emptyBox}></div>
         <div className={classes.titleBox}>
           <h2>About me</h2>
           <span className={classes.spanLine}></span>

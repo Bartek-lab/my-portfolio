@@ -14,6 +14,7 @@ const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     if (validator.name.length > 3 && validator.email.length > 3) {
       emailJs
         .sendForm(
@@ -29,17 +30,28 @@ const ContactMe = () => {
               name: "",
               email: "",
               subject: "",
-              message: "",
+              message: "E-mail has sent.",
             }));
-
-            return console.log("E-mail has been send.");
+            return console.log("E-mail has sent.");
           },
           (error) => {
             console.log(error.text);
-            return console.log("Error, e-mail isn't send.");
+            setValidator((prevState) => ({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            }));
+            return console.log("Error, e-mail hasn't been sent.");
           }
         );
     } else {
+      setValidator((prevState) => ({
+        name: "",
+        email: "",
+        subject: "",
+        message: "Failed, please write correct e-mail and name. ",
+      }));
       console.log("failed");
     }
   };
@@ -124,7 +136,9 @@ const ContactMe = () => {
           className={classes.mainTextInput}
         ></textarea>
 
-        <button value="send">Submit</button>
+        <button value="send" type="submit">
+          Submit
+        </button>
       </form>
 
       <div className={classes.footer}>

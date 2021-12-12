@@ -15,7 +15,9 @@ import {
 const Nav = () => {
   const [isOpenMenu, setOpenMenu] = useState(false);
 
-  const isTabletScreen = useMediaQuery({ query: "(min-width: 600px)" });
+  const isTabletScreen = useMediaQuery({
+    query: "(min-width: 600px) and (min-height:400px)",
+  });
   const handleToggle = () => {
     setOpenMenu(!isOpenMenu);
   };

@@ -2,6 +2,8 @@
   height: 100vh;
   width: 100vw;
   font-family: Poppins, sans-serif, Helvetica;
+  min-height: 400px;
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +19,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 600px;
 }
 
 .infoBox {
@@ -37,6 +40,7 @@
 
 .landingImage {
   width: 100%;
+  min-width: 200px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +90,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
   .landingPage {
     height: 100vh;
     -webkit-box-pack: center;
@@ -98,9 +102,8 @@
   }
   .mainBox {
     margin-top: 3rem;
-    width: 80%;
-    min-width: 600px;
-    height: 25vh;
+    width: 90%;
+    min-width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,7 +117,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   .infoBox {
     display: -webkit-box;
@@ -133,17 +136,99 @@
             align-items: center;
     margin: 0;
     height: 100%;
-    max-height: 25vh;
+    max-height: 20vh;
     width: 50%;
   }
   .mainText {
-    margin: 1rem 0 1rem 0;
-    height: 4rem;
+    font-size: 1rem;
+    height: 5rem;
+    width: 10rem;
+    margin: 1rem auto;
+  }
+  .title {
+    margin: auto;
+    font-size: 2.2rem;
+  }
+  .infoBox {
+    height: 100%;
+  }
+  .mainButton {
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 11rem;
+    margin: auto;
+  }
+  .landingImage {
+    position: relative;
+    width: 45%;
+  }
+  .landingImage .landingImageMobile {
+    display: block;
+    height: 200px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 400px) {
+  .landingPage {
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainBox {
+    margin-top: 3rem;
+    width: 90%;
+    min-width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5rem;
+  }
+  .title {
+    margin: 0 auto;
+  }
+  .infoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    height: 100%;
+    max-height: 240px;
+    width: 50%;
+  }
+  .mainText {
+    margin: auto;
+    height: auto;
     width: 11rem;
   }
   .mainButton {
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin: 0;
     width: 11rem;
   }
   .landingImage {
@@ -163,33 +248,35 @@
   }
   .mainBox {
     width: 65%;
-    height: 40vh;
+    height: 290px;
+    max-height: 284px;
+    min-width: 700px;
   }
   .infoBox {
     padding: 0;
-    max-height: 35vh;
+    max-height: 284px;
     margin-top: 1.5rem;
-    width: 52%;
+    width: 50%;
   }
   .title {
-    margin-right: 4rem;
+    margin: 0 auto;
     font-size: 3rem;
     width: 16rem;
   }
   .mainText {
-    margin: 2rem 4rem 0 0;
-    height: 6rem;
+    margin: auto;
+    height: auto;
     width: 16rem;
     font-size: 1.4rem;
   }
   .mainButton {
     font-size: 1.5rem;
-    margin: 2rem 4rem 0 0;
+    margin: 0 auto;
     width: 16rem;
     cursor: pointer;
   }
   .landingImage {
-    width: 48%;
+    width: 50%;
     margin-top: 1rem;
   }
   .landingImage .landingImageMobile {
@@ -204,31 +291,41 @@
 }
 
 @media (min-width: 1700px) {
-  .mainBox {
-    max-width: 2100px;
-  }
   .title {
     font-size: 3.5rem;
   }
   .infoBox {
     width: 50%;
+    height: 100%;
+    min-height: 384px;
+    max-height: 384px;
+  }
+  .mainBox {
+    height: 384px;
+    max-width: 1500px;
+  }
+  .mainText {
+    width: 18rem;
+    margin: auto;
   }
   .landingImage {
-    width: 30%;
+    width: 40%;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
   .landingImage .landingImageDesktop {
     display: block;
+    margin-left: -5rem;
     height: 384px;
     width: 478px;
-    margin-left: rem;
   }
   .mainButton {
-    margin: 5rem 3rem 0 0;
     width: 18rem;
+    margin: auto;
     height: 4rem;
   }
   .mainText {
-    margin: 2rem 4rem 2rem 0;
     font-size: 1.8rem;
   }
 }

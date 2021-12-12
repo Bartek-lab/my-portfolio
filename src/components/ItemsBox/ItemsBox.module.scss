@@ -40,8 +40,25 @@
     }
   }
 }
+@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+  .skillsBox {
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    margin: 0;
+    width: 120px;
+    li {
+      font-size: 0.7rem;
+    }
+    .image {
+      height: 30px;
+      margin: 0 0 1rem 0;
+      width: 30px;
+    }
+  }
+}
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-tablet) and (min-height: 400px) {
   .skillsBox {
     font-size: 0.8rem;
     width: 140px;
