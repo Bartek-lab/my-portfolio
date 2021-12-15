@@ -35,7 +35,7 @@ const SkillsAndTools = (props) => {
             to choose the right ones for a specific task.
           </article>
           <p className={classes.additionalMessage}>
-            💭 I trully fell in love with ReactJs, but I'm not scared of tasks
+            💭 I trully fell in love with ReactJs, but I'm not afraid of tasks
             in VanillaJs or clean CSS as well.
           </p>
         </div>

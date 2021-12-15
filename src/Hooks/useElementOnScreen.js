@@ -16,7 +16,7 @@ const useElementOnScreen = (options, targetRef) => {
     const observer = new IntersectionObserver(callBackFunction, optionsMemo);
     const currentTarget = targetRef.current;
     if (currentTarget) observer.observe(currentTarget);
-
+    console.log(observer);
     return () => {
       // if (currentTarget) observer.unobserve(currentTarget);
     };
@@ -25,3 +25,5 @@ const useElementOnScreen = (options, targetRef) => {
 };
 
 export default useElementOnScreen;
+
+// I will use this hook to make entering animation.

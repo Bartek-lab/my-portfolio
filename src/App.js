@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import "./App.scss";
 import LandingPage from "./components/LandingPage/LandingPage";
 import AboutMe from "./components//AboutMe/AboutMe";
@@ -7,23 +6,13 @@ import Projects from "./components/Projects/Projects";
 import ContactMe from "./components/ContactMe/ContactMe.js";
 import CooperateInfoBox from "./components/CooperateInfoBox/CooperateInfoBox";
 import Nav from "./components/Nav/Nav";
-import useElementOnScreen from "./Hooks/useElementOnScreen";
-function App() {
-  const targetRef = useRef(null);
-  const isIntersecting = useElementOnScreen(
-    {
-      root: null,
-      rootMargin: "-70px",
-      threshold: 0,
-    },
-    targetRef
-  );
 
+function App() {
   return (
     <div className="App">
-      <Nav isVisible={isIntersecting} />
+      <Nav />
       <LandingPage />
-      <AboutMe ref={targetRef} />
+      <AboutMe />
       <SkillsAndTools />
       <Projects />
       <CooperateInfoBox />

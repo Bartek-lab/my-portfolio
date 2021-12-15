@@ -3,25 +3,42 @@
 
 .iconBox {
   display: flex;
-
   width: auto;
-  justify-content: space-around;
   align-items: center;
-
+  justify-content: space-around;
   img {
     width: 30px;
     height: 30px;
     cursor: pointer;
   }
 }
-@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+
+@media (min-width: 480px) and (max-height: 812px) and (orientation: landscape) {
   .iconBox {
-    width: 100%;
-    display: block;
+    width: 80%;
     margin: auto;
+
     img {
       width: 20px;
       height: 20px;
     }
+  }
+}
+
+@media (max-width: $breakpoint-smallPhone) {
+  .iconBox {
+    margin: 0;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) and (min-height: 400px) {
+  .iconsBox {
+    margin: 0;
+    justify-content: flex-start;
   }
 }

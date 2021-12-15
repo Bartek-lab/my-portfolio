@@ -12,13 +12,9 @@ const Projects = () => {
           <h2>My projects</h2>
           <span className={classes.spanLine} />
           <article>
-            My projects are made from scratch.
-            <br />
-            I focus on making scalable products with practical UX interfaces.
-            <br />
-            Every design has been made in Figma.
-            <br />
-            If you have any questions
+            My projects are made from scratch. I focus on making scalable
+            products with practical UX interfaces. Every design has been made in
+            Figma. If you have any questions
             <Link to="contactMe" smooth={true} duration={100}>
               <p className={classes.navLink}>, ask me.</p>
             </Link>

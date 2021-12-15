@@ -1,6 +1,6 @@
 .projectSection {
   height: 80vh;
-  mmin-height: 568px;
+  min-height: 568px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,10 +21,11 @@
 }
 
 .projectSection article {
-  font-family: Poppins, sans-serif, Helvetica;
   margin: 0 2rem;
   padding: 1rem;
   font-weight: 300;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif, Helvetica;
 }
 
 .navLink {
@@ -115,7 +116,7 @@
   display: none;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .projectSection {
     height: auto;
   }
@@ -124,7 +125,7 @@
     margin: 4rem auto auto auto;
   }
   .projectSection article {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0 1rem;
   }
   .offerImgUnique {
@@ -135,10 +136,11 @@
   }
 }
 
-@media (min-device-width: 480px) and (max-device-height: 680px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-height: 812px) and (orientation: landscape) {
   .projectSection {
     height: auto;
     width: 100%;
+    min-height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,7 +201,7 @@
   }
   .infoBox article {
     margin: 0;
-    padding: 0 1rem 0 0;
+    padding: 0 3rem 0 0;
     font-size: 0.9rem;
   }
   .infoBox .spanLine {
@@ -231,7 +233,7 @@
   }
 }
 
-@media (min-width: 600px) and (min-height: 400px) {
+@media (min-width: 740px) and (min-height: 400px) {
   .sideProjects {
     width: 50%;
     min-width: 300px;
@@ -287,6 +289,7 @@
   .projectSection {
     height: auto;
     width: 100%;
+    min-height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,6 +334,7 @@
   .projectSection {
     height: 35vh;
     text-align: left;
+    min-height: 400px;
   }
   .projectSection h2 {
     margin: 0;

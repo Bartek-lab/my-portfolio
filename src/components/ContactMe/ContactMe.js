@@ -98,7 +98,7 @@ const ContactMe = () => {
         <input
           type="text"
           name="user_name"
-          placeholder="Name"
+          placeholder=" Name"
           onChange={userNameChangeHandler}
           value={validator.name}
           className={`${
@@ -109,7 +109,7 @@ const ContactMe = () => {
         ></input>
         <input
           type="text"
-          placeholder="E-mail"
+          placeholder=" E-mail"
           name="user_email"
           value={validator.email}
           onChange={emailChangeHandler}
@@ -121,7 +121,7 @@ const ContactMe = () => {
         ></input>
         <input
           type="text"
-          placeholder="Subject"
+          placeholder=" Subject"
           name="subject"
           value={validator.subject}
           onChange={subjectChangeHandler}
@@ -143,7 +143,9 @@ const ContactMe = () => {
 
       <div className={classes.footer}>
         <div className={classes.footerInfoBox}>
-          <IconsBox />
+          <div className={classes.iconsBox}>
+            <IconsBox />
+          </div>
           <p>E-mail : bartosz.benedyczak@gmail.com</p>
           <p>Bartek Benedyczak</p>
           <p>Poznań, Poland</p>
