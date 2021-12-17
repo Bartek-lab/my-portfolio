@@ -17,7 +17,7 @@ const AboutMe = (props) => {
           <article className={classes.aboutMeText}>
             Hi 🖖
             <br />
-            I'm Bartek, my journey with web development has started in last days
+            I'm Bartek, my journey with web development has begun in last days
             of 2020, when I started doing research and realized that it can be a
             good direction for self-development. Then I decided to do first
             courses and research other online sources. After this year I've
