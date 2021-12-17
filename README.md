@@ -1,4 +1,4 @@
-This is my portfolio website made in ReactJS.
+This is my portfolio made in ReactJS.
 
 Check this out: www.bartek-beendyczak.pl
 
