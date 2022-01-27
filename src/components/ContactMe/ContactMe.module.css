@@ -223,9 +223,12 @@
   .contactForm {
     width: 60%;
     max-width: 1400px;
-    bottom: 27%;
+    bottom: 29%;
     left: 20%;
     right: 20%;
+  }
+  .footer {
+    width: 100vw;
   }
 }
 /*# sourceMappingURL=ContactMe.module.css.map */

@@ -210,3 +210,9 @@
     transform: scale(1.2);
   }
 }
+
+@media (min-width: $breakpoint-bigScreen) {
+  .menu {
+    height: 40%;
+  }
+}

@@ -108,7 +108,8 @@
 
 @media (min-width: 1700px) {
   .cooperateInfoBox {
-    margin-left: 1rem;
+    max-width: 1500px;
+    margin: 0 auto 2rem auto;
   }
   .cooperateInfoBox .mainBox {
     width: 60%;
