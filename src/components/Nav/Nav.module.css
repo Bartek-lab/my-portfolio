@@ -199,12 +199,11 @@
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
     width: 4rem;
-    height: 50%;
+    height: 40%;
     min-height: 400px;
     background: #fdb550;
   }
   .menu ul {
-    height: 100%;
     margin: auto;
   }
   .menu ul li {
@@ -250,9 +249,10 @@
   }
   .menu {
     height: 60%;
+    min-height: 500px;
   }
   .menu ul li {
-    margin: 0.8rem 0;
+    margin: 0.6rem 0;
   }
   .navItem:hover {
     -webkit-transform: scale(1.2);

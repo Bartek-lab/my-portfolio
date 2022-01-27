@@ -96,6 +96,10 @@
 
 @media (min-width: $breakpoint-bigScreen) {
   .cooperateInfoBox {
+    margin-left: 1rem;
+    .mainBox {
+      width: 60%;
+    }
     h3 {
       font-size: 1.8rem;
     }

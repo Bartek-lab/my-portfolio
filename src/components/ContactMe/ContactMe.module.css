@@ -206,6 +206,7 @@
     max-height: 400px;
     max-width: 1250px;
     bottom: 25%;
+    margin: 0 auto;
   }
   .footer {
     height: 45%;
@@ -215,6 +216,16 @@
   }
   .footer .footerInfoBox img {
     margin: 1rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .contactForm {
+    width: 60%;
+    max-width: 1400px;
+    bottom: 27%;
+    left: 20%;
+    right: 20%;
   }
 }
 /*# sourceMappingURL=ContactMe.module.css.map */

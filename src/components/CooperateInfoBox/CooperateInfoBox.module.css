@@ -107,6 +107,12 @@
 }
 
 @media (min-width: 1700px) {
+  .cooperateInfoBox {
+    margin-left: 1rem;
+  }
+  .cooperateInfoBox .mainBox {
+    width: 60%;
+  }
   .cooperateInfoBox h3 {
     font-size: 1.8rem;
   }

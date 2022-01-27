@@ -175,6 +175,7 @@
     max-height: 400px;
     max-width: 1250px;
     bottom: 25%;
+    margin: 0 auto;
   }
 
   .footer {
@@ -185,5 +186,15 @@
         margin: 1rem;
       }
     }
+  }
+}
+
+@media (min-width: $breakpoint-bigScreen) {
+  .contactForm {
+    width: 60%;
+    max-width: 1400px;
+    bottom: 27%;
+    left: 20%;
+    right: 20%;
   }
 }
