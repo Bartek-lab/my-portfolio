@@ -15,15 +15,7 @@ import {
 const Nav = () => {
   const [isOpenMenu, setOpenMenu] = useState(false);
 
-  //  I will you this snippet of code to prevent scrolling when navbar is open
-  // const setHidden = () => {
-  //   console.log(document.body.style.overflow);
-  //   if (document.body.style.overflow !== "hidden") {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "scroll";
-  //   }
-  // };
+  
   const isTabletScreen = useMediaQuery({
     query: "(min-width: 600px) and (min-height:400px)",
   });
